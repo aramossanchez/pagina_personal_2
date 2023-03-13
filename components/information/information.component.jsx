@@ -2,6 +2,7 @@ import style from './information.module.scss';
 import AboutMeComponent from './aboutMe/aboutMe.component';
 import StudiesComponent from './studies/studies.component';
 import ExperiencesComponent from './experiences/experiences.component';
+import SkillsComponent from './skills/skills.component';
 
 export default function InformationComponent() {
     return (
@@ -9,6 +10,7 @@ export default function InformationComponent() {
             <AboutMeComponent />
             <StudiesComponent />
             <ExperiencesComponent />
+            <SkillsComponent />
         </section>
     )
 }

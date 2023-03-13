@@ -1,0 +1,64 @@
+.article {
+    width: calc(100% - 2em);
+    padding: 2em 1em;
+    border-bottom: 1px solid var(--border_color);
+    .title_article {
+        font-size: 1.5em;
+        font-weight: 500;
+        position: relative;
+        &::first-letter {
+            color: var(--primary_color);
+            font-size: 1.7em;
+        }
+        &:after {
+            position: absolute;
+            top: 0.5em;
+            left: -0.5em;
+            content: '';
+            background-color: var(--border_color);
+            width: 1.7em;
+            height: 1.7em;
+            border-radius: 100px;
+        }
+    }
+    .text_article {
+        line-height: 1.7em;
+        color: var(--font_color_secondary);
+    }
+    .data_article_container {
+        margin-top: 2em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+        width: 100%;
+        >div>div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1em;
+        }
+        .hard_skills_container {
+            border-right: 1px solid var(--border_color) ;
+        }
+        >div>div:first-child {
+            text-align: left;
+            width: 75%;
+            font-size: 1.3em;
+            font-weight: 500;
+            color: var(--primary_color);
+            border-bottom: 2px solid var(--primary_color);
+        }
+        >div>div>div {
+            margin-top: 1em;
+            padding-left: 0.2em;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            >span:first-child {
+                color: var(--primary_color);
+                margin-right: 0.2em;
+            }
+        }
+    }
+}
