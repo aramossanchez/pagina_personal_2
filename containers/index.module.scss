@@ -1,0 +1,22 @@
+.index_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    section {
+        height: 100vh;
+    }
+    >section:nth-child(1) {
+        width: 5vw;
+    }
+    >section:nth-child(2) {
+        width: 47.5vw;
+        background-color: rgb(241, 255, 47);
+    }
+    >section:nth-child(3) {
+        width: 47.5vw;
+        background-color: blueviolet;
+    }
+}
