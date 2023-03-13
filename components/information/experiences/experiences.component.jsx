@@ -1,11 +1,9 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import style from './studies.module.scss';
+import style from './experiences.module.scss';
 
-export default function StudiesComponent() {
+export default function ExperiencesComponent() {
     return (
         <article className={style.article}>
-            <div className={style.title_article}>Estudios</div>
+            <div className={style.title_article}>Experiencias</div>
             <div className={style.data_article_container}>
                 <div className={style.data_article}>
                     <span className={style.data_date}>2021 - 2022</span>
