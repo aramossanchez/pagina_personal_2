@@ -17,6 +17,11 @@
             text-transform: uppercase;
         }
     }
+    .link {
+        &:hover {
+            color: var(--primary_color_hover);
+        }
+    }
     .link_active {
         color: var(--primary_color);
     }
