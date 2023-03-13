@@ -16,12 +16,12 @@ export default function MenuNavBarComponent() {
                 <span>Experiencia</span>
             </div>
             <div className={style.link}>
-                <span className="material-icons">visibility</span>
-                <span>Proyectos</span>
-            </div>
-            <div className={style.link}>
                 <span className="material-icons">calendar_view_month</span>
                 <span>Skills</span>
+            </div>
+            <div className={style.link}>
+                <span className="material-icons">visibility</span>
+                <span>Proyectos</span>
             </div>
             <div className={style.link}>
                 <span className="material-icons">sports_score</span>

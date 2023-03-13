@@ -47,6 +47,10 @@
                 font-size: 1.25em;
                 text-decoration: underline;
             }
+            ol {
+                all: unset;
+                list-style: none;
+            }
         }
         .data_article:nth-child(odd) {
             border-right: 1px solid var(--border_color);
