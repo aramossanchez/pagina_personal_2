@@ -1,6 +1,6 @@
 import style from './skills.module.scss';
-import { hardSkills } from '../../../services/skills.sevices';
-import { softSkills } from '../../../services/skills.sevices';
+import { hardSkills } from '../../../services/skills.service';
+import { softSkills } from '../../../services/skills.service';
 
 export default function SkillsComponent() {
     return (

@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import style from './profile.module.scss';
+import { IconBrandGithub, IconBrandInstagram } from '@tabler/icons-react';
+
 
 export default function ProfileComponent() {
     return (
@@ -20,12 +22,10 @@ export default function ProfileComponent() {
                 <span className={style.information_profile_role}>Front-end Developer</span>
                 <div className={style.information_profile_social_networks_container}>
                     <Link href={'https://github.com/aramossanchez'} passHref>
-                        <Image
-                            width={40}
-                            height={40}
-                            alt={'Link a github'}
-                            src={'/images/github.svg'}
-                        />
+                        <IconBrandGithub color='#ffffff' />
+                    </Link>
+                    <Link href={'https://github.com/aramossanchez'} passHref>
+                        <IconBrandInstagram color='#ffffff' />
                     </Link>
                 </div>
                 <div className={style.information_profile_buttons_container}>
