@@ -8,3 +8,47 @@
     --primary_color_hover: rgb(255, 237, 189);
     --border_color: rgba(107, 107, 107, 0.274);
 }
+
+.light_theme {
+    --font_family: 'Poppins', sans-serif;
+    --background_color: rgb(240, 240, 240);
+    --background_color_secondary: rgba(192, 192, 192, 0.274);
+    --font_color: rgb(12, 12, 12);
+    --font_color_secondary: rgb(107, 107, 107);
+    --primary_color: rgb(0, 47, 255);
+    --primary_color_hover: rgb(164, 204, 255);
+    --border_color: rgba(134, 134, 134, 0.274);
+}
+
+.fruit_theme {
+    --font_family: 'Poppins', sans-serif;
+    --background_color: rgb(164, 255, 136);
+    --background_color_secondary: rgba(50, 175, 0, 0.274);
+    --font_color: rgb(1, 78, 36);
+    --font_color_secondary: rgb(54, 110, 71);
+    --primary_color: rgb(255, 0, 0);
+    --primary_color_hover: rgb(170, 84, 84);
+    --border_color: rgba(255, 0, 0, 0.274);
+}
+
+.rainy_theme {
+    --font_family: 'Poppins', sans-serif;
+    --background_color: rgb(38, 40, 43);
+    --background_color_secondary: rgba(173, 173, 173, 0.274);
+    --font_color: rgb(138, 189, 255);
+    --font_color_secondary: rgb(205, 248, 255);
+    --primary_color: rgb(255, 251, 0);
+    --primary_color_hover: rgb(249, 255, 191);
+    --border_color: rgba(0, 89, 255, 0.274);
+}
+
+.eight_theme {
+    --font_family: 'Poppins', sans-serif;
+    --background_color: rgb(66, 31, 122);
+    --background_color_secondary: rgba(129, 79, 145, 0.274);
+    --font_color: rgb(255, 255, 255);
+    --font_color_secondary: rgb(185, 185, 185);
+    --primary_color: rgb(255, 111, 111);
+    --primary_color_hover: rgb(255, 206, 206);
+    --border_color: rgba(189, 109, 255, 0.274);
+}
