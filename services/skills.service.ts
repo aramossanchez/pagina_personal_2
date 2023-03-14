@@ -14,7 +14,6 @@ export const hardSkills = [
 ];
 
 export const softSkills = [
-    'Habilidades comunicativas',
     'Trabajo en equipo',
     'Flexibilidad y adaptación al cambio',
     'Pasión',
