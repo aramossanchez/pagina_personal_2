@@ -1,7 +1,6 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import style from './profile.module.scss';
-import { IconBrandGithub, IconBrandInstagram } from '@tabler/icons-react';
+import { IconBrandDiscord, IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandSteam, IconBrandTwitter, IconRollerSkating } from '@tabler/icons-react';
 
 
 export default function ProfileComponent() {
@@ -21,22 +20,37 @@ export default function ProfileComponent() {
                 <span className={style.information_profile_name}>Armando Ramos</span>
                 <span className={style.information_profile_role}>Front-end Developer</span>
                 <div className={style.information_profile_social_networks_container}>
-                    <Link href={'https://github.com/aramossanchez'} passHref>
-                        <IconBrandGithub color='#ffffff' />
-                    </Link>
-                    <Link href={'https://github.com/aramossanchez'} passHref>
-                        <IconBrandInstagram color='#ffffff' />
-                    </Link>
+                    <a target="_blank" href='https://github.com/aramossanchez' rel="noopener noreferrer">
+                        <IconBrandGithub />
+                    </a>
+                    <a href={'https://github.com/aramossanchez'} target='_blank'>
+                        <IconBrandLinkedin />
+                    </a>
+                    <a href={'https://github.com/aramossanchez'} target='_blank'>
+                        <IconBrandTwitter />
+                    </a>
+                    <a href={'https://github.com/aramossanchez'} target='_blank'>
+                        <IconBrandInstagram />
+                    </a>
+                    <a href={'https://github.com/aramossanchez'} target='_blank'>
+                        <IconBrandDiscord />
+                    </a>
+                    <a href={'https://github.com/aramossanchez'} target='_blank'>
+                        <IconRollerSkating />
+                    </a>
+                    <a href={'https://github.com/aramossanchez'} target='_blank'>
+                        <IconBrandSteam />
+                    </a>
                 </div>
                 <div className={style.information_profile_buttons_container}>
-                    <Link href={'https://github.com/aramossanchez'} passHref>
+                    <a href={'https://github.com/aramossanchez'} target='_blank'>
                         <span>Descargar CV</span>
                         <span className="material-icons">cloud_download</span>
-                    </Link>
-                    <Link href={'https://github.com/aramossanchez'} passHref>
+                    </a>
+                    <a href={'https://github.com/aramossanchez'} target='_blank'>
                         <span>Mi Linkedin</span>
                         <span className="material-icons">cloud_download</span>
-                    </Link>
+                    </a>
                 </div>
             </div>
         </section>
