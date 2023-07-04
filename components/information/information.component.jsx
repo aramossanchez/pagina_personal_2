@@ -7,14 +7,30 @@ import ProyectsComponent from './proyects/proyects.component';
 import PersonalComponent from './personal/personal.component';
 
 export default function InformationComponent() {
-    return (
-        <section className={style.information_container}>
-            <AboutMeComponent />
-            <StudiesComponent />
-            <ExperiencesComponent />
-            <SkillsComponent />
-            <ProyectsComponent />
-            <PersonalComponent />
-        </section>
-    )
+
+  return (
+    <section className={style.information_container}>
+      <div id='about_me'>
+        <AboutMeComponent />
+      </div>
+      <div id='studies'>
+        <StudiesComponent />
+      </div>
+      <div id='experience'>
+        <ExperiencesComponent />
+      </div>
+      <div id='skills'>
+        <SkillsComponent />
+      </div>
+      <div id='projects' className={style.div_container}>
+        <ProyectsComponent />
+      </div>
+      <div id='personal'>
+        <PersonalComponent />
+      </div>
+      <div id='contact'>
+
+      </div>
+    </section>
+  )
 }

@@ -3,7 +3,8 @@ import style from './profile.module.scss';
 import { IconBrandDiscord, IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandSteam, IconBrandTwitter, IconRollerSkating } from '@tabler/icons-react';
 import { useState } from 'react';
 
-
+//TODO --> Hacer una manera de cerrar el selector de temas sin tener que hacer click en un tema diferente al actual
+//TODO --> Hacer que la imagen de fondo vaya cambiando entre varias imágenes de manera aleatoria
 export default function ProfileComponent() {
 
     const [activeTheme, setActiveTheme] = useState('primary_theme');
@@ -49,7 +50,7 @@ export default function ProfileComponent() {
             </div>
             <div className={style.information_profile_container}>
                 <span className={style.information_profile_name}>Armando Ramos</span>
-                <span className={style.information_profile_role}>Full Stack Developer</span>
+                <span className={style.information_profile_role}>Frontend Developer</span>
                 <div className={style.information_profile_social_networks_container}>
                     <a target="_blank" href='https://github.com/aramossanchez' rel="noopener noreferrer">
                         <IconBrandGithub />
