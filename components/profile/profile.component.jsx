@@ -4,7 +4,7 @@ import { IconBrandDiscord, IconBrandGithub, IconBrandInstagram, IconBrandLinkedi
 import { useEffect, useRef, useState } from 'react';
 
 //TODO --> Hacer una manera de cerrar el selector de temas sin tener que hacer click en un tema diferente al actual
-//TODO --> Hacer que la imagen de fondo vaya cambiando con animación
+//TODO --> Buscar combinaciones de colores más bonitas
 //TODO --> Cambiar las imágenes de fondo
 //TODO --> Añadir los enlaces correctos
 //TODO --> Cambiar el estilo de los botones de abajo
@@ -45,22 +45,29 @@ export default function ProfileComponent() {
 
     return (
         <section className={style.profile_container}>
-            <div ref={myRef} className={style.background_image_container} style={{ backgroundImage: `url(${activeBackgroundProfileImage})` }}>
-                <div className={style.open_selector_theme} onClick={() => setOpenedThemeSelector(true)}>
-                    <span className='material-icons'>brush</span>
-                </div>
-                <div className={`${style.color_selector} ${openedThemeSelector === null ? '' : openedThemeSelector ? style.selector_open : style.selector_close}`}>
-                    {themes.map((theme) => {
-                        return (
-                            <div
-                                key={theme}
-                                className={`${style.color_button_selector} ${style[theme]} ${theme === activeTheme ? style.theme_selected : ''}`}
-                                onClick={() => { handleThemeChangeTheme(theme); setOpenedThemeSelector(false) }}>
-                            </div>
-                        )
-                    })}
-                </div>
+            <div className={style.open_selector_theme} onClick={() => setOpenedThemeSelector(true)}>
+                <span className='material-icons'>brush</span>
             </div>
+            <div className={`${style.color_selector} ${openedThemeSelector === null ? '' : openedThemeSelector ? style.selector_open : style.selector_close}`}>
+                {themes.map((theme) => {
+                    return (
+                        <div
+                            key={theme}
+                            className={`${style.color_button_selector} ${style[theme]} ${theme === activeTheme ? style.theme_selected : ''}`}
+                            onClick={() => { handleThemeChangeTheme(theme); setOpenedThemeSelector(false) }}>
+                        </div>
+                    )
+                })}
+            </div>
+            {backgroundProfileImages.map((image) => {
+                return (
+                    <div ref={myRef} className={`
+                            ${style.background_image_container}
+                            ${activeBackgroundProfileImage !== image ? style.background_image_container_out : style.background_image_container_in}
+                        `} style={{ backgroundImage: `url(${image})` }}>
+                    </div>
+                )
+            })}
             <div className={style.profile_photo_container}>
                 <Image
                     width={500}
