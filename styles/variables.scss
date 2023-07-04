@@ -31,15 +31,15 @@
     --border_color: rgba(134, 134, 134, 0.274);
 }
 
-.fruit_theme {
+.desert_theme {
     --font_family: 'Poppins', sans-serif;
-    --background_color: rgb(164, 255, 136);
-    --background_color_secondary: rgba(50, 175, 0, 0.274);
-    --font_color: rgb(1, 78, 36);
-    --font_color_secondary: rgb(54, 110, 71);
-    --primary_color: rgb(255, 0, 0);
-    --primary_color_hover: rgb(170, 84, 84);
-    --border_color: rgba(255, 0, 0, 0.274);
+    --background_color: #E7D9C1;
+    --background_color_secondary: #d3c2a7;
+    --font_color: #000000;
+    --font_color_secondary: #333333;
+    --primary_color: #B70101;
+    --primary_color_hover: #b70101a9;
+    --border_color: #b7010148;
 }
 
 .rainy_theme {
@@ -55,7 +55,7 @@
 
 .eight_theme {
     --font_family: 'Poppins', sans-serif;
-    --background_color: rgb(66, 31, 122);
+    --background_color: rgb(44, 15, 90);
     --background_color_secondary: rgba(129, 79, 145, 0.274);
     --font_color: rgb(255, 255, 255);
     --font_color_secondary: rgb(185, 185, 185);

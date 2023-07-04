@@ -3,8 +3,8 @@ import style from './profile.module.scss';
 import { IconBrandDiscord, IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandSteam, IconBrandTwitter, IconRollerSkating } from '@tabler/icons-react';
 import { useEffect, useRef, useState } from 'react';
 
-//TODO --> Hacer una manera de cerrar el selector de temas sin tener que hacer click en un tema diferente al actual
-//TODO --> Buscar combinaciones de colores más bonitas
+// TODO --> Hacer una manera de cerrar el selector de temas sin tener que hacer click en un tema diferente al actual
+// TODO: --> Buscar combinaciones de colores más bonitas
 //TODO --> Cambiar las imágenes de fondo
 //TODO --> Añadir los enlaces correctos
 //TODO --> Cambiar el estilo de los botones de abajo
@@ -15,7 +15,7 @@ export default function ProfileComponent() {
     const [activeTheme, setActiveTheme] = useState('primary_theme');
     const [openedThemeSelector, setOpenedThemeSelector] = useState(null);
 
-    const themes = ['primary_theme', 'light_theme', 'fruit_theme', 'rainy_theme', 'eight_theme'];
+    const themes = ['primary_theme', 'light_theme', 'desert_theme', 'rainy_theme', 'eight_theme'];
     const backgroundProfileImages = ['/images/background_image_profile_1.jpg', '/images/background_image_profile_2.jpg', '/images/background_image_profile_3.jpg'];
 
     const [activeBackgroundProfileImage, setActiveBackgroundProfileImage] = useState('');

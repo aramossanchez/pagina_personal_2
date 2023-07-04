@@ -18,4 +18,9 @@
   }
 }
 
-//TODO --> Hacer responsive la página
+::selection{
+	color:var(--background_color); 
+	background-color: var(--primary_color);
+}
+  
+  //TODO --> Hacer responsive la página

@@ -62,8 +62,8 @@
             background-image: linear-gradient(to right top, rgb(240, 240, 240) 0%, rgb(240, 240, 240) 50%, rgb(0, 47, 255) 50%, rgb(0, 47, 255) 100%);
         }
 
-        .fruit_theme {
-            background-image: linear-gradient(to right top, rgb(164, 255, 136) 0%, rgb(164, 255, 136) 50%, rgb(255, 0, 0) 50%, rgb(255, 0, 0) 100%);
+        .desert_theme {
+            background-image: linear-gradient(to right top, #E7D9C1 0%, #E7D9C1 50%, #B70101 50%, #B70101 100%);
         }
 
         .rainy_theme {
@@ -147,6 +147,7 @@
 
         .information_profile_role {
             color: var(--primary_color);
+            font-weight: 500;
         }
 
         .information_profile_social_networks_container {
@@ -183,6 +184,7 @@
                 color: var(--primary_color);
                 background-color: var(--background_color);
                 white-space: nowrap;
+                pointer-events: none;
             }
 
             a:hover::before {
