@@ -1,16 +1,37 @@
 import Image from 'next/image';
 import style from './profile.module.scss';
 import { IconBrandDiscord, IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandSteam, IconBrandTwitter, IconRollerSkating } from '@tabler/icons-react';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 //TODO --> Hacer una manera de cerrar el selector de temas sin tener que hacer click en un tema diferente al actual
-//TODO --> Hacer que la imagen de fondo vaya cambiando entre varias imágenes de manera aleatoria
+//TODO --> Hacer que la imagen de fondo vaya cambiando con animación
+//TODO --> Cambiar las imágenes de fondo
+//TODO --> Añadir los enlaces correctos
+//TODO --> Cambiar el estilo de los botones de abajo
 export default function ProfileComponent() {
+
+    const myRef = useRef(null);
 
     const [activeTheme, setActiveTheme] = useState('primary_theme');
     const [openedThemeSelector, setOpenedThemeSelector] = useState(null);
 
     const themes = ['primary_theme', 'light_theme', 'fruit_theme', 'rainy_theme', 'eight_theme'];
+    const backgroundProfileImages = ['/images/background_image_profile_1.jpg', '/images/background_image_profile_2.jpg', '/images/background_image_profile_3.jpg'];
+
+    const [activeBackgroundProfileImage, setActiveBackgroundProfileImage] = useState('');
+
+    useEffect(() => {
+        changeBackgroundImage();
+    }, []);
+
+    const changeBackgroundImage = () => {
+        let counter = Math.floor(Math.random() * (backgroundProfileImages.length));
+        setActiveBackgroundProfileImage(backgroundProfileImages[counter]);
+        setInterval(() => {
+            counter === backgroundProfileImages.length - 1 ? counter = 0 : counter++;
+            setActiveBackgroundProfileImage(backgroundProfileImages[counter]);
+        }, 30000);
+    }
 
     const handleThemeChangeTheme = (theme) => {
         themes.forEach(themeOfArray => {
@@ -24,7 +45,7 @@ export default function ProfileComponent() {
 
     return (
         <section className={style.profile_container}>
-            <div className={style.background_image_container}>
+            <div ref={myRef} className={style.background_image_container} style={{ backgroundImage: `url(${activeBackgroundProfileImage})` }}>
                 <div className={style.open_selector_theme} onClick={() => setOpenedThemeSelector(true)}>
                     <span className='material-icons'>brush</span>
                 </div>

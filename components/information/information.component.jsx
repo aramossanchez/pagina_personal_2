@@ -5,7 +5,7 @@ import ExperiencesComponent from './experiences/experiences.component';
 import SkillsComponent from './skills/skills.component';
 import ProyectsComponent from './proyects/proyects.component';
 import PersonalComponent from './personal/personal.component';
-
+//TODO --> Crear el componente de contacto
 export default function InformationComponent() {
 
   return (

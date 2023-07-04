@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import style from './proyects.module.scss';
-
+//TODO --> Cambiar nombre del componente
+//TODO --> Crear los popups de los proyectos
 export default function ProyectsComponent() {
     return (
         <article className={style.article}>
