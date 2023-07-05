@@ -1,6 +1,6 @@
 import style from './studies.module.scss';
-import { studies } from '../../../services/studies.service';
-
+import { studies } from "../../../services/studies.service";
+//TODO --> Logos de academias
 export default function StudiesComponent() {
     return (
         <article className={style.article}>

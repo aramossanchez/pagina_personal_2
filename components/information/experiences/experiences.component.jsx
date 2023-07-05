@@ -1,5 +1,5 @@
 import style from './experiences.module.scss';
-
+//TODO --> Logos de empresas
 export default function ExperiencesComponent() {
     return (
         <article className={style.article}>

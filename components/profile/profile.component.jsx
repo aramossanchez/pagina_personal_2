@@ -3,8 +3,8 @@ import style from './profile.module.scss';
 import { IconBrandDiscord, IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandSteam, IconBrandTwitter, IconRollerSkating } from '@tabler/icons-react';
 import { useEffect, useRef, useState } from 'react';
 
-// TODO --> Hacer una manera de cerrar el selector de temas sin tener que hacer click en un tema diferente al actual
-// TODO: --> Buscar combinaciones de colores más bonitas
+//TODO --> Hacer una manera de cerrar el selector de temas sin tener que hacer click en un tema diferente al actual
+//TODO --> Buscar combinaciones de colores más bonitas
 //TODO --> Cambiar las imágenes de fondo
 //TODO --> Añadir los enlaces correctos
 //TODO --> Cambiar el estilo de los botones de abajo

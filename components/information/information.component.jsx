@@ -5,6 +5,7 @@ import ExperiencesComponent from './experiences/experiences.component';
 import SkillsComponent from './skills/skills.component';
 import ProyectsComponent from './proyects/proyects.component';
 import PersonalComponent from './personal/personal.component';
+import ContactComponent from './contact/contact.component';
 //TODO --> Crear el componente de contacto
 export default function InformationComponent() {
 
@@ -28,8 +29,8 @@ export default function InformationComponent() {
       <div id='personal'>
         <PersonalComponent />
       </div>
-      <div id='contact'>
-
+      <div id='contact' className={style.div_container}>
+        <ContactComponent />
       </div>
     </section>
   )
