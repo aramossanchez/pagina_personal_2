@@ -1,11 +1,17 @@
 "use client"
 
-import { IndexContainer } from '@/containers/Index.container'
+import { IndexAboutContainer } from '@/containers/IndexAbout/IndexAbout.container'
+import { IndexPresentationContainer } from '@/containers/IndexPresentation/IndexPresentation.container'
+import { MenuTopContainer } from '@/containers/MenuTop.container'
+import { OrnamentsContainer } from '@/containers/Ornaments/Ornaments.container'
 
 export default function Index() {
   return (
-    <main className='w-[100vw] h-[100vh] bg-white px-4 py-2'>
-      <IndexContainer />
+    <main className='w-[100vw]'>
+      <OrnamentsContainer />
+      <MenuTopContainer />
+      <IndexPresentationContainer />
+      <IndexAboutContainer />
     </main>
   )
 }
