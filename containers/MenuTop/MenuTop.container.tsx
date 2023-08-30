@@ -65,14 +65,15 @@ export function MenuTopContainer() {
           `}
         />
         {/* CONTENEDOR ENLACES Y BOTÓN */}
-        <div className='flex flex-row items-center gap-20'>
+        <div className='flex flex-row items-center
+        min-[1280px]:gap-20 min-[1023px]:gap-10'>
           {/* ENLACES */}
           <div className={`
             ${menuOpen ? 'gap-10' : 'gap-0'}
             min-[1023px]:flex-row flex-col
-            min-[1023px]:gap-x-20 gap-x-0
+            min-[1280px]:gap-x-20 min-[1023px]:gap-x-10 gap-x-0
             min-[1023px]:justify-end justify-start
-            min-[1023px]:text-normalFontColor text-titleFontColor
+            min-[1023px]:text-normalFontColor text-titleFontColor            
             flex items-center font-medium
           `}>
             <Link href={'/'}>

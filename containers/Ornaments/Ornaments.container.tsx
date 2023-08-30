@@ -12,7 +12,7 @@ export function OrnamentsContainer() {
       <span className={`
         ${style.square_animated_index_presentation_first}
         min-[1023px]:w-[10vw] w-[100px] min-[1023px]:h-[10vw] h-[100px]
-        absolute bg-gradient-to-r from-primaryColor1 to-primaryColor2 left-[-4%] top-[100vh] leading-none opacity-50 origin-center -rotate-[20deg]
+        absolute bg-gradient-to-r from-primaryColor1 to-primaryColor2 left-[-4%] top-[95vh] leading-none opacity-50 origin-center -rotate-[20deg]
       `}></span>
       <span className='absolute w-[30vw] h-[30vw] border-8 border-primaryColor2 right-[-10%] top-[90vh] leading-none origin-center -rotate-[40deg]'></span>
     </>

@@ -4,7 +4,6 @@ import { IndexAboutContainer } from '@/containers/IndexAbout/IndexAbout.containe
 import { IndexPresentationContainer } from '@/containers/IndexPresentation/IndexPresentation.container'
 import { MenuTopContainer } from '@/containers/MenuTop/MenuTop.container'
 import { OrnamentsContainer } from '@/containers/Ornaments/Ornaments.container'
-import style from '../containers/Ornaments/Ornaments.module.css';
 
 export default function Index() {
   return (
