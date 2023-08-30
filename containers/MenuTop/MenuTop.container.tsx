@@ -24,7 +24,7 @@ export function MenuTopContainer() {
   return (
     <section className={`${scrolled > 0 ? 'bg-backgroundColor' : 'bg-transparent'} fixed w-full z-50 ease-in-out duration-300`}>
       <div className='
-        flex-row justify-center py-2
+        flex-row justify-center py-2 fixed top-0 w-full bg-backgroundColor z-50
         min-[1023px]:hidden flex
       '>
         <Image
