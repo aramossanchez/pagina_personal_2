@@ -3,16 +3,18 @@ import style from './Ornaments.module.css';
 export function OrnamentsContainer() {
 
   return (
-    <section className='w-[100vw] overflow-x-hidden'>
+    <>
       <span className={`
         ${style.bubble_animated_index_presentation_first}
-        absolute rounded-full w-[10vw] h-[10vw] bg-gradient-to-r from-primaryColor1 to-primaryColor2 right-[-2%] top-[15%] leading-none opacity-50 origin-center -rotate-[20deg]
+        min-[1023px]:w-[10vw] w-[120px] min-[1023px]:h-[10vw] h-[120px]
+        absolute rounded-full bg-gradient-to-r from-primaryColor1 to-primaryColor2 right-[-2%] top-[15vh] leading-none opacity-50 origin-center -rotate-[20deg]
       `}></span>
       <span className={`
         ${style.square_animated_index_presentation_first}
-        absolute w-[10vw] h-[10vw] bg-gradient-to-r from-primaryColor1 to-primaryColor2 left-[-4%] bottom-[-2%] leading-none opacity-50 origin-center -rotate-[20deg]
+        min-[1023px]:w-[10vw] w-[100px] min-[1023px]:h-[10vw] h-[100px]
+        absolute bg-gradient-to-r from-primaryColor1 to-primaryColor2 left-[-4%] top-[100vh] leading-none opacity-50 origin-center -rotate-[20deg]
       `}></span>
-      <span className='absolute w-[30vw] h-[30vw] border-8 border-primaryColor2 right-[-10%] bottom-[-20%] leading-none origin-center -rotate-[40deg]'></span>
-    </section>
+      <span className='absolute w-[30vw] h-[30vw] border-8 border-primaryColor2 right-[-10%] top-[90vh] leading-none origin-center -rotate-[40deg]'></span>
+    </>
   )
 }

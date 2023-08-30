@@ -22,9 +22,9 @@ export function MenuTopContainer() {
   }, []);
 
   return (
-    <section className={`${scrolled > 0 ? 'bg-backgroundColor' : 'bg-transparent'} fixed w-full z-50 ease-in-out duration-300`}>
+    <section className={`${scrolled > 0 ? 'bg-backgroundColor' : 'bg-transparent'} fixed w-[100vw] z-50 ease-in-out duration-300`}>
       <div className='
-        flex-row justify-center py-2 fixed top-0 w-full bg-backgroundColor z-50
+        flex-row justify-center py-2 fixed top-0 w-[100vw] bg-backgroundColor z-50
         min-[1023px]:hidden flex
       '>
         <Image
@@ -44,7 +44,7 @@ export function MenuTopContainer() {
         </div>
       </div>
       <div className={`
-        flex flex-row w-full items-center px-10 justify-between
+        flex flex-row items-center px-10 justify-between
         ${scrolled > 0 ? 'py-1' : 'py-3'}
         ${scrolled > 0 ? style.menu_top_down : 'py-2 ease-in-out duration-300'}
         ${menuOpen ? style.menu_top_down : style.menu_top_down_closed}
@@ -65,7 +65,7 @@ export function MenuTopContainer() {
           `}
         />
         {/* CONTENEDOR ENLACES Y BOTÓN */}
-        <div className='flex flex-row items-center gap-20 '>
+        <div className='flex flex-row items-center gap-20'>
           {/* ENLACES */}
           <div className={`
             ${menuOpen ? 'gap-10' : 'gap-0'}
