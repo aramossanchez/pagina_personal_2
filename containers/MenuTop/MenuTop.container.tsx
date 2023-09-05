@@ -77,33 +77,33 @@ export function MenuTopContainer() {
             flex items-center font-medium
           `}>
             <Link href={'/'}>
-              <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-500 duration-0'>
+              <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 HOME
               </span>
             </Link>
             <Link href={'/'}>
-              <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-500 duration-0'>
-                ABOUT ME
-              </span>
-            </Link>
-            <Link href={'/'}>
-              <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-500 duration-0'>
-                SKILLS
-              </span>
-            </Link>
-            <Link href={'/'}>
-              <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-500 duration-0'>
+              <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 EXPERIENCE
               </span>
             </Link>
             <Link href={'/'}>
-              <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-500 duration-0'>
+              <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
+                ABOUT ME
+              </span>
+            </Link>
+            <Link href={'/'}>
+              <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
+                PORTFOLIO
+              </span>
+            </Link>
+            <Link href={'/'}>
+              <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 STUDIES
               </span>
             </Link>
             <Link href={'/'}>
-              <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-500 duration-0'>
-                PORTFOLIO
+              <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
+                SKILLS
               </span>
             </Link>
           </div>

@@ -1,4 +1,5 @@
 import { ButtonComponent } from '@/components/Button.component';
+import { IconDownload } from '@tabler/icons-react';
 
 export function IndexPresentationContainer() {
 
@@ -33,7 +34,7 @@ export function IndexPresentationContainer() {
           </span>
         </span>
         <div className='text-xl mt-5'>
-        <ButtonComponent text='Download my CV'/>
+        <ButtonComponent text='Download my CV' icon={<IconDownload />}/>
         </div>
       </div>
     </section>
