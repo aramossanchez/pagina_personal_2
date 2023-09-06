@@ -1,11 +1,11 @@
 import { ButtonComponent } from '@/components/Button.component';
-import style from './IndexAbout.module.css';
+import style from './IndexExperience.module.css';
 import Image from 'next/image';
 import { basePath } from '../../config/config';
 import { SecondaryButton } from '@/components/SecondaryButton.component';
 import { IconBrandInstagram } from '@tabler/icons-react';
 
-export function IndexAboutContainer() {
+export function IndexExperienceContainer() {
 
   return (
     <section className='
@@ -30,7 +30,7 @@ export function IndexAboutContainer() {
               text-titleFontColor
               text-6xl
             '>
-              About Me
+              Experience
             </span>
           </div>
           <div className='
@@ -77,7 +77,7 @@ export function IndexAboutContainer() {
                 text-titleFontColor
                 text-6xl
               '>
-                About Me
+                Experience
               </span>
             </div>
             {/* TEXTO EN ESPAÑOL */}
