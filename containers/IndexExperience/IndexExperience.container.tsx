@@ -38,16 +38,26 @@ export function IndexExperienceContainer() {
             min-[1023px]:pl-6 pl-10
             pt-1
           '>
-            <span>Geekhubs</span>
-            <span>2022 - Actualidad</span>
-            <span>Full Stack Developer</span>
+            <div className=''>
+            <span className='text-primaryColor2 font-medium text-lg'>Front End Developer</span>
+            </div>
+            <div className='py-2 flex flex-row items-end gap-3 text-[17px]'>
+              <span className='text-titleFontColor'>Geekshubs</span>
+              <span>2022 - Actualidad</span>
+            </div>
+            <div className='flex flex-col gap-2'>
             <span>Proyectos en los que participé:</span>
-            <span>Nexo: ERP para empresa de telecomunicaciones (localización y solución de bugs, creación de nuevas funcionalidades, mantenimiento de código) (frontend). Tecnologías utilizadas: Angular, Typescript</span>
+            <div className='flex flex-col relative pl-3'>
+              <span><span className='text-titleFontColor'>Nexo: </span>ERP para empresa de telecomunicaciones (localización y solución de bugs, creación de nuevas funcionalidades, mantenimiento de código).</span>
+              <span><span className='text-titleFontColor'>Tecnologías utilizadas:</span> Angular, Typescript</span>
+              <span className=' bg-primaryColor2 w-[10px] h-[10px] rounded-full border-[1px] border-primaryColor1 absolute top-[0.5em] left-[-0.2em]'></span>
+            </div>
+            </div>
           </div>
         </div>
         <div className='w-full flex flex-row items-center justify-start'>
           <div className='
-            pt-2
+            pt-1
             min-[1023px]:w-[49.5%] w-full
             min-[1023px]:pr-6 pr-0
             min-[1023px]:pl-0 pl-10
