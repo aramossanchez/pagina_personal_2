@@ -93,12 +93,12 @@ export function MenuTopContainer() {
             </Link>
             <Link href={'/'}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
-                SKILLS
+                PORTFOLIO
               </span>
             </Link>
             <Link href={'/'}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
-                PORTFOLIO
+                SKILLS
               </span>
             </Link>
             <Link href={'/'}>

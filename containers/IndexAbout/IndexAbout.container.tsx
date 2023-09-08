@@ -9,8 +9,7 @@ export function IndexAboutContainer() {
 
   return (
     <section className='
-      z-10 w-[100vw] relative overflow-x-hidden flex flex-row justify-center
-      min-[1023px]:h-[100vh] h-auto
+      z-10 w-[100vw] relative overflow-x-hidden flex flex-row justify-center mt-[30vh] h-full
     '>
       <div className='
         mt-10 flex items-start gap-20
@@ -87,9 +86,9 @@ export function IndexAboutContainer() {
 
             {/* TEXTO EN INGLÉS */}
             <div className='w-full flex flex-col gap-3'>
-              <p className='text-lg'>I've been working as a programmer <span className='text-titleFontColor font-medium'>since 2022</span>, focusing on the <span className='text-titleFontColor font-medium'>Frontend</span> side of development (although I have <span className='text-titleFontColor font-medium'>solid knowledge</span> in <span className='text-titleFontColor font-medium'>Backend</span> as well).</p>
-              <p className='text-lg'>I really pay attention to <span className='text-titleFontColor font-medium'>details</span>, and I love exploring the <span className='text-titleFontColor font-medium'>multiple possibilities</span> that the front end of a web/application has to offer (notifications, input validations from users, adjusting content and design to various screen sizes, effects on different elements, etc).</p>
-              <p className='text-lg'>I've found that I really enjoy being part of a team where <span className='text-titleFontColor font-medium'>ideas</span> and <span className='text-titleFontColor font-medium'>solutions</span> come from <span className='text-titleFontColor font-medium'>all parties</span> involved in the development. These groups, where dialogue is encouraged, everyone is heard, and all opinions are weighed, in my experience, yield the <span className='text-titleFontColor font-medium'>best results</span>.</p>
+              <p>I've been working as a programmer <span className='text-titleFontColor font-medium'>since 2022</span>, focusing on the <span className='text-titleFontColor font-medium'>Frontend</span> side of development (although I have <span className='text-titleFontColor font-medium'>solid knowledge</span> in <span className='text-titleFontColor font-medium'>Backend</span> as well).</p>
+              <p>I really pay attention to <span className='text-titleFontColor font-medium'>details</span>, and I love exploring the <span className='text-titleFontColor font-medium'>multiple possibilities</span> that the front end of a web/application has to offer (notifications, input validations from users, adjusting content and design to various screen sizes, effects on different elements, etc).</p>
+              <p>I've found that I really enjoy being part of a team where <span className='text-titleFontColor font-medium'>ideas</span> and <span className='text-titleFontColor font-medium'>solutions</span> come from <span className='text-titleFontColor font-medium'>all parties</span> involved in the development. These groups, where dialogue is encouraged, everyone is heard, and all opinions are weighed, in my experience, yield the <span className='text-titleFontColor font-medium'>best results</span>.</p>
             </div>
             <div className='
               flex flex-row items-center gap-6
