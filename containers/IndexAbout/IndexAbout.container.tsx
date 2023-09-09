@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { basePath } from '../../config/config';
 import { SecondaryButton } from '@/components/SecondaryButton.component';
 import { IconBrandInstagram } from '@tabler/icons-react';
+import { TitleComponent } from '@/components/TitleComponent';
 
 export function IndexAboutContainer() {
 
@@ -25,12 +26,7 @@ export function IndexAboutContainer() {
             w-full flex-row mb-16 justify-center
             min-[1023px]:hidden flex
           '>
-            <span className='
-              text-titleFontColor
-              text-6xl
-            '>
-              About Me
-            </span>
+            <TitleComponent text='About Me' />
           </div>
           <div className='
             w-full flex flex-row
@@ -72,12 +68,7 @@ export function IndexAboutContainer() {
             <div className='
               min-[1023px]:block hidden
             '>
-              <span className='
-                text-titleFontColor
-                text-6xl
-              '>
-                About Me
-              </span>
+              <TitleComponent text='About Me' />
             </div>
             {/* TEXTO EN ESPAÑOL */}
             {/* <p className='text-lg mt-8'>Trabajo como programador <span className='text-titleFontColor font-medium'> desde 2022</span>, focalizado en la parte <span className='text-titleFontColor font-medium'>Frontend</span> del desarrollo (aunque tengo <span className='text-titleFontColor font-medium'>firmes conocimientos</span> sobre la parte <span className='text-titleFontColor font-medium'>Backend</span>).</p>

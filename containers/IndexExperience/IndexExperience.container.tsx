@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { basePath } from '../../config/config';
 import { IconBriefcase2 } from '@tabler/icons-react';
 import { TooltipComponent } from '@/components/Tooltip/Tooltip.component';
+import { TitleComponent } from '@/components/TitleComponent';
 
 export function IndexExperienceContainer() {
 
@@ -10,12 +11,7 @@ export function IndexExperienceContainer() {
       z-10 w-[100vw] relative overflow-x-hidden flex flex-col justify-center items-center h-full
     '>
       <div className='w-full flex-row mb-16 justify-center flex'>
-        <span className='
-          text-titleFontColor
-          text-6xl
-        '>
-          Experience
-        </span>
+        <TitleComponent text='Experience' />
       </div>
       {/* CONTENEDOR DE EXPERIENCIAS */}
       <div className='
