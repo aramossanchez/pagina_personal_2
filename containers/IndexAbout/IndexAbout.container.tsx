@@ -85,6 +85,7 @@ export function IndexAboutContainer() {
               flex flex-row items-center gap-6
               min-[1023px]:w-auto w-full           
               min-[1023px]:justify-start justify-center
+              min-[379px]:text-[16px] text-[13px]
             '>
               <ButtonComponent text='HIRE ME' />
               <SecondaryButton text='SOCIAL MEDIA' icon={<IconBrandInstagram />} />
