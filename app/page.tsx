@@ -2,6 +2,7 @@
 
 import { IndexAboutContainer } from '@/containers/IndexAbout/IndexAbout.container'
 import { IndexExperienceContainer } from '@/containers/IndexExperience/IndexExperience.container'
+import { IndexPortfolioContainer } from '@/containers/IndexPortfolio/IndexPortfolio.container'
 import { IndexPresentationContainer } from '@/containers/IndexPresentation/IndexPresentation.container'
 import { MenuTopContainer } from '@/containers/MenuTop/MenuTop.container'
 import { OrnamentsContainer } from '@/containers/Ornaments/Ornaments.container'
@@ -15,6 +16,7 @@ export default function Index() {
         <IndexPresentationContainer />
         <IndexExperienceContainer />
         <IndexAboutContainer />
+        <IndexPortfolioContainer />
       </main>
     </div>
   )
