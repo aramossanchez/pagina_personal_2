@@ -4,6 +4,7 @@ import { IndexAboutContainer } from '@/containers/IndexAbout/IndexAbout.containe
 import { IndexExperienceContainer } from '@/containers/IndexExperience/IndexExperience.container'
 import { IndexPortfolioContainer } from '@/containers/IndexPortfolio/IndexPortfolio.container'
 import { IndexPresentationContainer } from '@/containers/IndexPresentation/IndexPresentation.container'
+import { IndexSkillsContainer } from '@/containers/IndexSkills/IndexSkills.container'
 import { MenuTopContainer } from '@/containers/MenuTop/MenuTop.container'
 import { OrnamentsContainer } from '@/containers/Ornaments/Ornaments.container'
 
@@ -17,6 +18,7 @@ export default function Index() {
         <IndexExperienceContainer />
         <IndexAboutContainer />
         <IndexPortfolioContainer />
+        <IndexSkillsContainer />
       </main>
     </div>
   )
