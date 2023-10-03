@@ -3,8 +3,11 @@ import { HardSkillComponent } from '@/components/HardSkill.component';
 import hardSkills from '../../data/hardSkills.data';
 import softSkills from '../../data/softSkills.data';
 import { SoftSkillComponent } from '@/components/SoftSkill.component';
+import { useState } from 'react';
 
 export function IndexSkillsContainer() {
+
+  const [open, setOpen] = useState('');
 
   return (
     <section className='
@@ -21,9 +24,8 @@ export function IndexSkillsContainer() {
             xl:w-[1200px] md:w-[700px] w-[350px]
           '>
             {hardSkills.map((skill, index) => {
-              console.log(skill);
               return (
-                <HardSkillComponent key={index} url={skill.Url} image={skill.Image} text={skill.Text} />
+                <HardSkillComponent key={index} url={skill.Url} image={skill.Image} text={skill.Text} open={open} setOpen={setOpen} />
               )
             })}
           </div>
@@ -35,7 +37,6 @@ export function IndexSkillsContainer() {
             xl:w-[1200px] md:w-[700px] w-[350px]
           '>
             {softSkills.map((skill, index) => {
-              console.log(skill);
               return (
                 <SoftSkillComponent key={index} image={skill.Image} text={skill.Text} label={skill.Label} />
               )

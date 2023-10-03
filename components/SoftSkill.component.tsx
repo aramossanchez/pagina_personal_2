@@ -9,7 +9,7 @@ export function SoftSkillComponent({ key = 0, image = '', text = '', label = '' 
   return (
     <div
       key={key}
-      className='relative cursor-pointer w-auto h-auto flex flex-col items-center justify-center gap-1 text-titleFontColor hover:brightness-[0.9] hover:text-primaryColor2 ease-in-out duration-200'
+      className='relative cursor-help w-auto h-auto flex flex-col items-center justify-center gap-1 text-titleFontColor hover:brightness-[0.9] hover:text-primaryColor2 ease-in-out duration-200'
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
