@@ -88,22 +88,17 @@ export function MenuTopContainer() {
             </Link>
             <Link href={'/'}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
-                ABOUT ME
-              </span>
-            </Link>
-            <Link href={'/'}>
-              <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 PORTFOLIO
               </span>
             </Link>
             <Link href={'/'}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
-                SKILLS
+                ABOUT ME
               </span>
             </Link>
             <Link href={'/'}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
-                STUDIES
+                SKILLS
               </span>
             </Link>
           </div>

@@ -1,6 +1,7 @@
 "use client"
 
 import { IndexAboutContainer } from '@/containers/IndexAbout/IndexAbout.container'
+import { IndexContactContainer } from '@/containers/IndexContact/IndexContact.container'
 import { IndexExperienceContainer } from '@/containers/IndexExperience/IndexExperience.container'
 import { IndexPortfolioContainer } from '@/containers/IndexPortfolio/IndexPortfolio.container'
 import { IndexPresentationContainer } from '@/containers/IndexPresentation/IndexPresentation.container'
@@ -16,9 +17,10 @@ export default function Index() {
         <MenuTopContainer />
         <IndexPresentationContainer />
         <IndexExperienceContainer />
-        <IndexAboutContainer />
         <IndexPortfolioContainer />
+        <IndexAboutContainer />
         <IndexSkillsContainer />
+        <IndexContactContainer />
       </main>
     </div>
   )
