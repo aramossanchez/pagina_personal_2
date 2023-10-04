@@ -43,8 +43,7 @@ export function IndexContactContainer() {
         <div className='w-6/12'>
           <form action="" className='flex flex-col items-start gap-5 w-[300px]'>
             <InputComponent />
-            <InputComponent />            
-            <textarea name="" id="" cols="30" rows="10" className='w-full'></textarea>
+            <InputComponent />
             <button></button>
           </form>
         </div>
