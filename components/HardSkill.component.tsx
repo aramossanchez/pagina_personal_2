@@ -10,23 +10,17 @@ export function HardSkillComponent({ key = 0, url = '', image = '', text = '', o
       onMouseEnter={() => setOpen(text)}
       onMouseLeave={() => setOpen('')}
     >
-      <div className={`${open === text ? 'block' : 'hidden'} z-50 bg-backgroundColor cursor-auto absolute top-[-5.7em] w-[200px] text-sm bg-black border-[1px] border-primaryColor2 text-white px-2 pt-1 pb-3`}>
-        <span>Do you want to visite {text} official page?</span>
-        <div className='flex flex-row items-center gap-3 mt-2'>
+      <div className={`${open === text ? 'flex' : 'hidden'} flex-col items-center z-50 bg-backgroundColor cursor-auto absolute top-[-5.7em] w-[200px] text-sm bg-black border-[1px] border-primaryColor2 text-white px-2 pt-1 pb-3`}>
+        <span className='text-center'>Do you want to visite {text} official page?</span>
+        <div className='flex flex-row items-center justify-center gap-3 mt-2 w-full'>
           <Link
             className='bg-gradient-to-r from-primaryColor2 to-primaryColor1 px-2 hover:brightness-125 ease-in-out duration-300 rounded-sm'
             key={key}
             href={url}
             target='_blank'
           >
-            Yes
+            Visit page
           </Link>
-          <div
-            className='outline outline-[1px]  outline-offset-[0px] outline-primaryColor1 px-2 cursor-pointer hover:brightness-125 ease-in-out duration-300 rounded-sm'
-            onClick={(event) => { setOpen(''); event.stopPropagation(); }}
-          >
-            No
-          </div>
         </div>
       </div>
       <Image
