@@ -9,7 +9,7 @@ export function FooterContainer() {
           border-top-[1px] border-normalFontColor
           min-[1280px]:w-[1000px] w-[90%]
         '/>
-        <span className='pt-5 pb-1 text-center'>2023 - Armando Ramos Sánchez. All rights reserved. </span>
+        <span className='pt-5 pb-1 text-center px-5'>2023 - Armando Ramos Sánchez. All rights reserved. </span>
       </div>
     </section>
   )

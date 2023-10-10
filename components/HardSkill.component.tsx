@@ -7,9 +7,10 @@ export function HardSkillComponent({ key = 0, url = '', image = '', text = '', o
   return (
     <div
       className='z-10 cursor-pointer relative flex flex-col items-center gap-1 text-titleFontColor hover:brightness-[1.1] hover:text-primaryColor2 ease-in-out duration-200'
-      onClick={() => setOpen(text)}
+      onMouseEnter={() => setOpen(text)}
+      onMouseLeave={() => setOpen('')}
     >
-      <div className={`${open === text ? 'block' : 'hidden'} z-50 bg-backgroundColor cursor-auto absolute top-[-6.7em] w-[200px] text-sm bg-black border-[1px] border-primaryColor2 text-white px-2 pt-1 pb-3`}>
+      <div className={`${open === text ? 'block' : 'hidden'} z-50 bg-backgroundColor cursor-auto absolute top-[-5.7em] w-[200px] text-sm bg-black border-[1px] border-primaryColor2 text-white px-2 pt-1 pb-3`}>
         <span>Do you want to visite {text} official page?</span>
         <div className='flex flex-row items-center gap-3 mt-2'>
           <Link
