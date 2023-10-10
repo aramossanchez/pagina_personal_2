@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { basePath } from '../../config/config';
 import { SecondaryButton } from '@/components/SecondaryButton.component';
 import { IconBrandInstagram } from '@tabler/icons-react';
-import { TitleComponent } from '@/components/TitleComponent';
+import { TitleComponent } from '@/components/Title.component';
 
 export function IndexAboutContainer() {
 

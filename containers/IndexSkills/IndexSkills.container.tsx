@@ -1,4 +1,4 @@
-import { TitleComponent } from '@/components/TitleComponent';
+import { TitleComponent } from '@/components/Title.component';
 import { HardSkillComponent } from '@/components/HardSkill.component';
 import hardSkills from '../../data/hardSkills.data';
 import softSkills from '../../data/softSkills.data';

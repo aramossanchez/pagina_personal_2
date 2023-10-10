@@ -1,4 +1,4 @@
-import { TitleComponent } from '@/components/TitleComponent';
+import { TitleComponent } from '@/components/Title.component';
 import portfolioProjects from '../../data/portfolioProjects.data';
 import { PortfolioProjectComponent } from '@/components/PortfolioProject/PortfolioProject.component';
 

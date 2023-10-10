@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { basePath } from '../../config/config';
 import { IconBriefcase2 } from '@tabler/icons-react';
 import { TooltipComponent } from '@/components/Tooltip/Tooltip.component';
-import { TitleComponent } from '@/components/TitleComponent';
+import { TitleComponent } from '@/components/Title.component';
 
 export function IndexExperienceContainer() {
 

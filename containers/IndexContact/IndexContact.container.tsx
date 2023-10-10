@@ -1,14 +1,9 @@
 import { ButtonComponent } from '@/components/Button.component';
 import { InputComponent } from '@/components/Input.component';
+import { TextareaComponent } from '@/components/Textarea.component';
+import { TitleComponent } from '@/components/Title.component';
 import { IconBrandInstagram, IconBrandLinkedin, IconBrandX } from '@tabler/icons-react';
-import { Montserrat } from 'next/font/google';
-
-const Montse = Montserrat({
-  weight: ['400', '500', '600', '700'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-  display: 'swap',
-});
+import style from './IndexContact.module.css';
 
 export function IndexContactContainer() {
 
@@ -17,34 +12,56 @@ export function IndexContactContainer() {
       z-10 w-[100vw] relative overflow-x-hidden flex flex-col justify-center items-center h-full mt-[22vh] pt-10 pb-10
     '>
       <div className='w-full flex-row mb-16 justify-center flex'>
-        <span className={`${Montse.className}
-          text-titleFontColor
-          min:[360px]:text-6xl text-5xl
-        `}>
-          Contact
-        </span>
+        <TitleComponent text='Contact' />
       </div>
       <div className='
-        flex  gap-10
+        flex
         min-[1023px]:flex-row flex-col
-        min-[1023px]:items-start items-center
+        min-[1023px]:w-auto w-[90%]
+        min-[1023px]:gap-10 gap-20
       '>
-        <div className='w-6/12'>
-          <div>
-            <span className='text-2xl text-titleFontColor'>Drop me a message</span>
-            <p>Contacta conmigo en cualquiera de mis redes sociales, o mándame un mensaje directamente.</p>
+        <div className='
+          flex flex-col gap-9
+          min-[1023px]:w-6/12 w-full
+          min-[1023px]:items-start items-center
+        '>
+          <div className='flex flex-col gap-3'>
+            <span className='
+              text-2xl text-titleFontColor
+              min-[1023px]:text-left text-center
+            '>
+              Look at my social networks
+            </span>
+            <p className='
+              min-[1023px]:text-left text-center
+            '>Cotillea mis aficiones e inquietudes en cualquiera de mis redes sociales.</p>
           </div>
-          <div className='flex flex-col items-start gap-6'>
+          <div className='flex flex-row items-start gap-6 flex-wrap justify-center'>
             <ButtonComponent withPadding={false} text='Linkedin' icon={<IconBrandLinkedin />} />
             <ButtonComponent withPadding={false} text='Twitter' icon={<IconBrandX />} />
             <ButtonComponent withPadding={false} text='Instagram' icon={<IconBrandInstagram />} />
           </div>
         </div>
-        <div className='w-6/12'>
-          <form action="" className='flex flex-col items-start gap-5 w-[300px]'>
-            <InputComponent />
-            <InputComponent />
-            <button></button>
+        <div className='
+          flex flex-col gap-9
+          min-[1023px]:w-6/12 w-full
+          min-[1023px]:items-start items-center
+        '>
+          <div className='flex flex-col gap-3'>
+            <span className='
+              text-2xl text-titleFontColor
+              min-[1023px]:text-left text-center
+            '>
+              Drop me a message
+            </span>
+            <p className='
+              min-[1023px]:text-left text-center
+            '>Mándame un correo electrónico a través de este formulario.</p>
+          </div>
+          <form action="" className={`${style.form} flex flex-col items-start gap-5 w-[350px] p-5 bg-gradient-to-r from-primaryColor2 to-primaryColor1 rounded-lg`}>
+            <InputComponent placeholder='Name' />
+            <TextareaComponent placeholder='Message' />
+            <button className='px-3 py-1 text-titleFontColor font-medium bg-backgroundColor rounded-lg cursor-pointer hover:brightness-125 ease-in-out duration-300 flex flex-row items-center gap-2'>Send</button>
           </form>
         </div>
       </div>
