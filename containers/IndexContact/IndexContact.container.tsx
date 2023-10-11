@@ -8,7 +8,7 @@ import style from './IndexContact.module.css';
 export function IndexContactContainer() {
 
   return (
-    <section className='
+    <section id='Contact' className='
       z-10 w-[100vw] relative overflow-x-hidden flex flex-col justify-center items-center h-full mt-[22vh] pt-10 pb-10
     '>
       <div className='w-full flex-row mb-16 justify-center flex'>

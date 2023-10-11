@@ -10,8 +10,8 @@ export function IndexSkillsContainer() {
   const [open, setOpen] = useState('');
 
   return (
-    <section className='
-      z-10 w-[100vw] relative overflow-x-hidden flex flex-col justify-center items-center h-full mt-[30vh] pb-10
+    <section id='Skills' className='
+      z-10 w-[100vw] relative overflow-x-hidden flex flex-col justify-center items-center h-full pt-[30vh] pb-10
     '>
       <div className='w-full flex-row mb-16 justify-center flex'>
         <TitleComponent text='Skills' />
