@@ -4,6 +4,7 @@ import { TextareaComponent } from '@/components/Textarea.component';
 import { TitleComponent } from '@/components/Title.component';
 import { IconBrandInstagram, IconBrandLinkedin, IconBrandX } from '@tabler/icons-react';
 import style from './IndexContact.module.css';
+import Link from 'next/link';
 
 export function IndexContactContainer() {
 
@@ -37,9 +38,15 @@ export function IndexContactContainer() {
             '>Cotillea mis aficiones e inquietudes en cualquiera de mis redes sociales.</p>
           </div>
           <div className='flex flex-row items-start gap-6 flex-wrap justify-center'>
-            <ButtonComponent withPadding={false} text='Linkedin' icon={<IconBrandLinkedin />} />
-            <ButtonComponent withPadding={false} text='Twitter' icon={<IconBrandX />} />
-            <ButtonComponent withPadding={false} text='Instagram' icon={<IconBrandInstagram />} />
+            <Link href={'https://es.linkedin.com/in/armando-ramos-s%C3%A1nchez-0b678b102'} target='_blank'>
+              <ButtonComponent withPadding={false} text='Linkedin' icon={<IconBrandLinkedin />} />
+            </Link>
+            <Link href={'https://twitter.com/aramos_dev'} target='_blank'>
+              <ButtonComponent withPadding={false} text='Twitter' icon={<IconBrandX />} />
+            </Link>
+            <Link href={'https://www.instagram.com/armandohyeah/'} target='_blank'>
+              <ButtonComponent withPadding={false} text='Instagram' icon={<IconBrandInstagram />} />
+            </Link>
           </div>
         </div>
         <div className='

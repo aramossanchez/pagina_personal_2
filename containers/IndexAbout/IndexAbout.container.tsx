@@ -5,6 +5,7 @@ import { basePath } from '../../config/config';
 import { SecondaryButton } from '@/components/SecondaryButton.component';
 import { IconBrandInstagram } from '@tabler/icons-react';
 import { TitleComponent } from '@/components/Title.component';
+import Link from 'next/link';
 
 export function IndexAboutContainer() {
 
@@ -87,8 +88,12 @@ export function IndexAboutContainer() {
               min-[1023px]:justify-start justify-center
               min-[379px]:text-[16px] text-[13px]
             '>
-              <ButtonComponent text='HIRE ME' />
-              <SecondaryButton text='SOCIAL MEDIA' icon={<IconBrandInstagram />} />
+              <Link href={'/#Contact'}>
+                <ButtonComponent text='HIRE ME' />
+              </Link>
+              <Link href={'https://www.instagram.com/armandohyeah/'} target='_blank'>
+                <SecondaryButton text='SOCIAL MEDIA' icon={<IconBrandInstagram />} />
+              </Link>
             </div>
           </div>
         </div>
