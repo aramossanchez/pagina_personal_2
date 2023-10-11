@@ -28,9 +28,9 @@ export function HardSkillComponent({ key = 0, url = '', image = '', text = '', o
         width={80}
         height={80}
         alt="Logo"
-        className='w-[80px] h-[80px] relative z-10'
+        className='min-[768px]:w-[80px] w-[50px] min-[768px]:h-[80px] h-[50px] relative z-10'
       />
-      <span className='text-xl'>{text}</span>
+      <span className='min-[768px]:text-xl text-lg'>{text}</span>
     </div>
   )
 }

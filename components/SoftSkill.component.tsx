@@ -21,9 +21,9 @@ export function SoftSkillComponent({ key = 0, image = '', text = '', label = '' 
         width={80}
         height={80}
         alt="Logo"
-        className='w-[80px] h-[80px]'
+        className='min-[768px]:w-[80px] w-[50px] min-[768px]:h-[80px] h-[50px]'
       />
-      <span className='text-xl'>{text}</span>
+      <span className='min-[768px]:text-xl text-lg'>{text}</span>
     </div>
   )
 }
