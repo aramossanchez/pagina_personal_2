@@ -9,8 +9,13 @@ import { useState } from 'react';
 
 export function IndexContactContainer() {
 
-  const [emailSubject, setEmailSubject] = useState();
-  const [emailBody, setEmailBody] = useState();
+  const [emailSubject, setEmailSubject] = useState('');
+  const [emailBody, setEmailBody] = useState('');
+
+  function sendMail() {
+    const mailtoLink = `mailto:armandoramossanchez@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+    window.location.href = mailtoLink;
+  }
 
   return (
     <section id='Contact' className='
@@ -27,7 +32,7 @@ export function IndexContactContainer() {
       '>
         <div className='
           flex flex-col gap-9
-          min-[1023px]:w-6/12 w-full
+          min-[1023px]:w-7/12 w-full
           min-[1023px]:items-start items-center
         '>
           <div className='flex flex-col gap-3'>
@@ -39,7 +44,7 @@ export function IndexContactContainer() {
             </span>
             <p className='
               min-[1023px]:text-left text-center
-            '>Cotillea mis aficiones e inquietudes en cualquiera de mis redes sociales.</p>
+            '>Check out my hobbies and interests on any of my social media.</p>
           </div>
           <div className='flex flex-row items-start gap-6 flex-wrap justify-center'>
             <Link href={'https://es.linkedin.com/in/armando-ramos-s%C3%A1nchez-0b678b102'} target='_blank'>
@@ -55,7 +60,7 @@ export function IndexContactContainer() {
         </div>
         <div className='
           flex flex-col gap-9
-          min-[1023px]:w-6/12 w-full
+          min-[1023px]:w-5/12 w-full
           min-[1023px]:items-start items-center
         '>
           <div className='flex flex-col gap-3'>
@@ -67,14 +72,17 @@ export function IndexContactContainer() {
             </span>
             <p className='
               min-[1023px]:text-left text-center
-            '>Mándame un correo electrónico a través de este formulario.</p>
+            '>Send me an email through this form.</p>
           </div>
           <div className={`${style.form} flex flex-col items-start gap-5 w-[350px] p-5 bg-gradient-to-r from-primaryColor2 to-primaryColor1 rounded-lg`}>
-            <InputComponent placeholder='Name' />
-            <TextareaComponent placeholder='Message' />
-            <Link href={`mailto:armandoramossanchez@gmail.com?subject=${emailSubject}&body=${emailBody}`} >
-              <span className='px-3 py-1 text-titleFontColor font-medium bg-backgroundColor rounded-lg cursor-pointer hover:brightness-125 ease-in-out duration-300 flex flex-row items-center gap-2'>Send</span>
-            </Link>
+            <InputComponent placeholder='Name' setHook={setEmailSubject} />
+            <TextareaComponent placeholder='Message' setHook={setEmailBody} />
+            <button
+             onClick={sendMail}
+             className='px-3 py-1 text-titleFontColor font-medium bg-backgroundColor rounded-lg cursor-pointer hover:brightness-125 ease-in-out duration-300 flex flex-row items-center gap-2'
+            >
+              Send
+            </button>
           </div>
         </div>
       </div>
