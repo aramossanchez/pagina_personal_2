@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { basePath } from '../../config/config';
 import { ButtonComponent } from '@/components/Button.component';
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { IconMenu2, IconX } from '@tabler/icons-react';
 import style from './MenuTop.module.css'
@@ -39,11 +38,11 @@ export function MenuTopContainer() {
           :
           <IconMenu2 onClick={() => setMenuOpen(true)} color='var(--primaryColor2)' size={30} className='cursor-pointer' />
         }
-        <Link href={'/#Contact'}>
+        <a href={'/#Contact'}>
           <div className='absolute right-2'>
             <ButtonComponent text='CONTACT' withPadding={false} />
           </div>
-        </Link>
+        </a>
       </div>
       <div className={`
         flex flex-row items-center px-10 justify-between
@@ -78,37 +77,37 @@ export function MenuTopContainer() {
             min-[1023px]:text-normalFontColor text-titleFontColor            
             flex items-center font-medium
           `}>
-            <Link href={'/#Home'}>
+            <a href={'/#Home'}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 HOME
               </span>
-            </Link>
-            <Link href={'/#Experience'}>
+            </a>
+            <a href={'/#Experience'}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 EXPERIENCE
               </span>
-            </Link>
-            <Link href={'/#Portfolio'}>
+            </a>
+            <a href={'/#Portfolio'}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 PORTFOLIO
               </span>
-            </Link>
-            <Link href={'/#About'}>
+            </a>
+            <a href={'/#About'}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 ABOUT ME
               </span>
-            </Link>
-            <Link href={'/#Skills'}>
+            </a>
+            <a href={'/#Skills'}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 SKILLS
               </span>
-            </Link>
+            </a>
           </div>
-          <Link href={'/#Contact'}>
+          <a href={'/#Contact'}>
             <div className='min-[1023px]:block hidden'>
               <ButtonComponent text='CONTACT' withPadding={scrolled > 0 ? false : true} />
             </div>
-          </Link>
+          </a>
         </div>
       </div>
     </section>
