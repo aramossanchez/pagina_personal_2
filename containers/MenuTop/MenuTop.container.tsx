@@ -7,6 +7,8 @@ import style from './MenuTop.module.css'
 
 export function MenuTopContainer() {
 
+  console.log(basePath);
+
   const [scrolled, setScrolled] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -38,7 +40,7 @@ export function MenuTopContainer() {
           :
           <IconMenu2 onClick={() => setMenuOpen(true)} color='var(--primaryColor2)' size={30} className='cursor-pointer' />
         }
-        <a href={'/#Contact'}>
+        <a href={`${basePath}#Contact`}>
           <div className='absolute right-2'>
             <ButtonComponent text='CONTACT' withPadding={false} />
           </div>
@@ -77,33 +79,33 @@ export function MenuTopContainer() {
             min-[1023px]:text-normalFontColor text-titleFontColor            
             flex items-center font-medium
           `}>
-            <a href={'/#Home'}>
+            <a href={`${basePath}#Home`}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 HOME
               </span>
             </a>
-            <a href={'/#Experience'}>
+            <a href={`${basePath}#Experience`}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 EXPERIENCE
               </span>
             </a>
-            <a href={'/#Portfolio'}>
+            <a href={`${basePath}#Portfolio`}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 PORTFOLIO
               </span>
             </a>
-            <a href={'/#About'}>
+            <a href={`${basePath}#About`}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 ABOUT ME
               </span>
             </a>
-            <a href={'/#Skills'}>
+            <a href={`${basePath}#Skills`}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 SKILLS
               </span>
             </a>
           </div>
-          <a href={'/#Contact'}>
+          <a href={`${basePath}#Contact`}>
             <div className='min-[1023px]:block hidden'>
               <ButtonComponent text='CONTACT' withPadding={scrolled > 0 ? false : true} />
             </div>

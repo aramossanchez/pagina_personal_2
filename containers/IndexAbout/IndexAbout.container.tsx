@@ -88,7 +88,7 @@ export function IndexAboutContainer() {
               min-[1023px]:justify-start justify-center
               min-[379px]:text-[16px] text-[13px]
             '>
-              <a href={'/#Contact'}>
+              <a href={`${basePath}#Contact`}>
                 <ButtonComponent text='HIRE ME' />
               </a>
               <Link href={'https://www.instagram.com/armandohyeah/'} target='_blank'>
