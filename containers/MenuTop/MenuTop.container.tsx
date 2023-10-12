@@ -7,8 +7,6 @@ import style from './MenuTop.module.css'
 
 export function MenuTopContainer() {
 
-  console.log(basePath);
-
   const [scrolled, setScrolled] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -79,33 +77,33 @@ export function MenuTopContainer() {
             min-[1023px]:text-normalFontColor text-titleFontColor            
             flex items-center font-medium
           `}>
-            <a href={`${basePath}#Home`}>
+            <a href={`${basePath}#Home`} onClick={() => setMenuOpen(false)}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 HOME
               </span>
             </a>
-            <a href={`${basePath}#Experience`}>
+            <a href={`${basePath}#Experience`} onClick={() => setMenuOpen(false)}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 EXPERIENCE
               </span>
             </a>
-            <a href={`${basePath}#Portfolio`}>
+            <a href={`${basePath}#Portfolio`} onClick={() => setMenuOpen(false)}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 PORTFOLIO
               </span>
             </a>
-            <a href={`${basePath}#About`}>
+            <a href={`${basePath}#About`} onClick={() => setMenuOpen(false)}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 ABOUT ME
               </span>
             </a>
-            <a href={`${basePath}#Skills`}>
+            <a href={`${basePath}#Skills`} onClick={() => setMenuOpen(false)}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 SKILLS
               </span>
             </a>
           </div>
-          <a href={`${basePath}#Contact`}>
+          <a href={`${basePath}#Contact`} onClick={() => setMenuOpen(false)}>
             <div className='min-[1023px]:block hidden'>
               <ButtonComponent text='CONTACT' withPadding={scrolled > 0 ? false : true} />
             </div>
