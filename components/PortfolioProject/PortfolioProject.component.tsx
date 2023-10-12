@@ -23,7 +23,7 @@ export function PortfolioProjectComponent({ key = 0, projectNumber = 0, projectN
           <span className=' text-primaryColor2 text-2xl'>Project {projectNumber}</span>
           <span className=' text-titleFontColor text-2xl'>{projectName}</span>
           <p>{explanation}</p>
-          <Link href={url} className='flex flex-row gap-3 hover:text-primaryColor2 ease-in-out duration-300'>
+          <Link href={url} className='flex flex-row gap-3 hover:text-primaryColor2 ease-in-out duration-300' target='_blank'>
             <IconArrowNarrowRight />
             <span>Read more</span>
           </Link>
