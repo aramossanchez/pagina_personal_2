@@ -35,15 +35,15 @@ export function IndexExperienceContainer() {
               <span>2022 - Actualidad</span>
             </div>
             <div className='flex flex-col gap-2'>
-              <span>Proyectos en los que participé:</span>
+              <span>Projects I participated in:</span>
               {/* LISTADO DE PROYECTOS */}
               <div className='flex flex-col relative pl-3'>
                 <div className='flex flex-col'>
                   <span className='text-titleFontColor'>Geekup</span>
-                  <span>Aplicación web para la validación de lenguajes de programación a través de pruebas tipo test y pruebas de código automatizadas. Zona para empresas en la que gestionar personal (creación de proyecto desde cero, elaboración de funcionalidades).</span>
+                  <span>Web application for validating programming languages through multiple-choice tests and automated code tests. Area for companies to manage staff (creation of project from scratch, development of features).</span>
                 </div>
                 <span className='flex my-2 flex-col items-start'>
-                  <span className='text-titleFontColor'>Tecnologías utilizadas</span>
+                  <span className='text-titleFontColor'>Technologies used</span>
                   <div className='flex flex-row items-center gap-2 my-2'>
                     <TooltipComponent label='Next.js'>
                       <Image
@@ -97,10 +97,10 @@ export function IndexExperienceContainer() {
               <div className='flex flex-col relative pl-3'>
                 <div className='flex flex-col'>
                   <span className='text-titleFontColor'>Captend</span>
-                  <span>Aplicación web basada en la creación de textos legales a partir de plantillas inteligentes. (creación de proyecto desde cero, elaboración de funcionalidades).</span>
+                  <span>Web application based on the creation of legal texts from smart templates. (creation of project from scratch, development of features).</span>
                 </div>
                 <span className='flex my-2 flex-col items-start'>
-                  <span className='text-titleFontColor'>Tecnologías utilizadas</span>
+                  <span className='text-titleFontColor'>Technologies used</span>
                   <div className='flex flex-row items-center gap-2 my-2'>
                     <TooltipComponent label='Next.js'>
                       <Image
@@ -145,10 +145,10 @@ export function IndexExperienceContainer() {
               <div className='flex flex-col relative pl-3'>
                 <div className='flex flex-col'>
                   <span className='text-titleFontColor'>Nexo</span>
-                  <span>ERP para empresa de telecomunicaciones (localización y solución de bugs, creación de nuevas funcionalidades, mantenimiento de código).</span>
+                  <span>ERP for telecommunications company (bug localization and resolution, creation of new features, code maintenance).</span>
                 </div>
                 <span className='flex my-2 flex-col items-start'>
-                  <span className='text-titleFontColor'>Tecnologías utilizadas</span>
+                  <span className='text-titleFontColor'>Technologies used</span>
                   <div className='flex flex-row items-center gap-2 my-2'>
                     <TooltipComponent label='Angular'>
                       <Image
@@ -219,7 +219,7 @@ export function IndexExperienceContainer() {
               min-[1023px]:items-end items-start
               min-[1023px]:text-right text-left
               '>
-              <span>Proyectos en los que participé:</span>
+              <span>Projects I participated in:</span>
               {/* LISTADO DE PROYECTOS */}
               <div className='
                 flex flex-col relative 
@@ -229,13 +229,13 @@ export function IndexExperienceContainer() {
               '>
                 <div className='flex flex-col'>
                   <span className='text-titleFontColor'>CLB</span>
-                  <span>Widget en página web dedicada a la compra de artículos de maquillaje de lujo (creación de proyecto de cero, réplica de web)</span>
+                  <span>Widget on a website dedicated to purchasing luxury makeup items (project creation from scratch, website replication).</span>
                 </div>
                 <span className='
                   flex mt-2 mb-2 flex-col
                   min-[768px]:items-end items-start
                 '>
-                  <span className='text-titleFontColor'>Tecnologías utilizadas</span>
+                  <span className='text-titleFontColor'>Technologies used</span>
                   <div className='flex flex-row items-center my-2 gap-2'>
                     <TooltipComponent label='React'>
                       <Image
@@ -280,13 +280,13 @@ export function IndexExperienceContainer() {
               '>
                 <div className='flex flex-col'>
                   <span className='text-titleFontColor'>Riversa</span>
-                  <span>Página web dedicada a la compra de artículos para el jardín (creación de proyecto de cero)</span>
+                  <span>Website dedicated to purchasing garden items (project creation from scratch).</span>
                 </div>
                 <span className='
                   flex mt-2 mb-2 flex-col
                   min-[768px]:items-end items-start
                 '>
-                  <span className='text-titleFontColor'>Tecnologías utilizadas</span>
+                  <span className='text-titleFontColor'>Technologies used</span>
                   <div className='flex flex-row items-center gap-2 my-2'>
                     <TooltipComponent label='React'>
                       <Image
@@ -331,13 +331,13 @@ export function IndexExperienceContainer() {
               '>
                 <div className='flex flex-col'>
                   <span className='text-titleFontColor'>Nex</span>
-                  <span>Aplicación web dedicada a la compra de neumáticos (localización y solución de bugs, creación de nuevas funcionalidades).</span>
+                  <span>Web application dedicated to purchasing tires (bug localization and resolution, creation of new features).</span>
                 </div>
                 <span className='
                   flex mt-2 mb-2 flex-col
                   min-[768px]:items-end items-start
                 '>
-                  <span className='text-titleFontColor'>Tecnologías utilizadas</span>
+                  <span className='text-titleFontColor'>Technologies used</span>
                   <div className='flex flex-row items-center my-2 gap-2'>
                     <TooltipComponent label='React'>
                       <Image

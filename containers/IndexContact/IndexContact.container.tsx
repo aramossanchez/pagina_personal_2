@@ -5,8 +5,12 @@ import { TitleComponent } from '@/components/Title.component';
 import { IconBrandInstagram, IconBrandLinkedin, IconBrandX } from '@tabler/icons-react';
 import style from './IndexContact.module.css';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export function IndexContactContainer() {
+
+  const [emailSubject, setEmailSubject] = useState();
+  const [emailBody, setEmailBody] = useState();
 
   return (
     <section id='Contact' className='
@@ -65,11 +69,13 @@ export function IndexContactContainer() {
               min-[1023px]:text-left text-center
             '>Mándame un correo electrónico a través de este formulario.</p>
           </div>
-          <form action="" className={`${style.form} flex flex-col items-start gap-5 w-[350px] p-5 bg-gradient-to-r from-primaryColor2 to-primaryColor1 rounded-lg`}>
+          <div className={`${style.form} flex flex-col items-start gap-5 w-[350px] p-5 bg-gradient-to-r from-primaryColor2 to-primaryColor1 rounded-lg`}>
             <InputComponent placeholder='Name' />
             <TextareaComponent placeholder='Message' />
-            <button className='px-3 py-1 text-titleFontColor font-medium bg-backgroundColor rounded-lg cursor-pointer hover:brightness-125 ease-in-out duration-300 flex flex-row items-center gap-2'>Send</button>
-          </form>
+            <Link href={`mailto:armandoramossanchez@gmail.com?subject=${emailSubject}&body=${emailBody}`} >
+              <span className='px-3 py-1 text-titleFontColor font-medium bg-backgroundColor rounded-lg cursor-pointer hover:brightness-125 ease-in-out duration-300 flex flex-row items-center gap-2'>Send</span>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
