@@ -3,6 +3,7 @@ import { basePath } from '../../config/config';
 import { IconBriefcase2 } from '@tabler/icons-react';
 import { TooltipComponent } from '@/components/Tooltip/Tooltip.component';
 import { TitleComponent } from '@/components/Title.component';
+import Link from 'next/link';
 
 export function IndexExperienceContainer() {
 
@@ -32,14 +33,16 @@ export function IndexExperienceContainer() {
             </div>
             <div className='py-2 flex flex-row items-end gap-3 text-[17px]'>
               <span className='text-titleFontColor'>Geekshubs</span>
-              <span>2022 - Actualidad</span>
+              <span>2022 - Present time</span>
             </div>
             <div className='flex flex-col gap-2'>
               <span>Projects I participated in:</span>
               {/* LISTADO DE PROYECTOS */}
               <div className='flex flex-col relative pl-3'>
                 <div className='flex flex-col'>
-                  <span className='text-titleFontColor'>Geekup</span>
+                  <Link href={'https://app.geekup.es/register'} target='_blank'>
+                    <span className='text-titleFontColor underline'>Geekup</span>
+                  </Link>
                   <span>Web application for validating programming languages through multiple-choice tests and automated code tests. Area for companies to manage staff (creation of project from scratch, development of features).</span>
                 </div>
                 <span className='flex my-2 flex-col items-start'>
@@ -96,7 +99,9 @@ export function IndexExperienceContainer() {
               </div>
               <div className='flex flex-col relative pl-3'>
                 <div className='flex flex-col'>
-                  <span className='text-titleFontColor'>Captend</span>
+                  <Link href={'https://captend.com/login'} target='_blank'>
+                    <span className='text-titleFontColor underline'>Captend</span>
+                  </Link>
                   <span>Web application based on the creation of legal texts from smart templates. (creation of project from scratch, development of features).</span>
                 </div>
                 <span className='flex my-2 flex-col items-start'>
@@ -229,7 +234,7 @@ export function IndexExperienceContainer() {
               '>
                 <div className='flex flex-col'>
                   <span className='text-titleFontColor'>CLB</span>
-                  <span>Widget on a website dedicated to purchasing luxury makeup items (project creation from scratch, website replication).</span>
+                  <span>Widget on a website dedicated to purchasing luxury makeup items (project creation from scratch, website replication) (not finished).</span>
                 </div>
                 <span className='
                   flex mt-2 mb-2 flex-col
@@ -280,7 +285,7 @@ export function IndexExperienceContainer() {
               '>
                 <div className='flex flex-col'>
                   <span className='text-titleFontColor'>Riversa</span>
-                  <span>Website dedicated to purchasing garden items (project creation from scratch).</span>
+                  <span>Website dedicated to purchasing garden items (project creation from scratch) (not finished).</span>
                 </div>
                 <span className='
                   flex mt-2 mb-2 flex-col
@@ -330,7 +335,9 @@ export function IndexExperienceContainer() {
                 min-[1023px]:items-end items-start
               '>
                 <div className='flex flex-col'>
-                  <span className='text-titleFontColor'>Nex</span>
+                  <Link href={'https://www.nex.es'} target='_blank'>
+                    <span className='text-titleFontColor underline'>Nex</span>
+                  </Link>
                   <span>Web application dedicated to purchasing tires (bug localization and resolution, creation of new features).</span>
                 </div>
                 <span className='
