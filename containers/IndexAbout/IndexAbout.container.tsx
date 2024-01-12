@@ -3,9 +3,9 @@ import style from './IndexAbout.module.css';
 import Image from 'next/image';
 import { basePath } from '../../config/config';
 import { SecondaryButton } from '@/components/SecondaryButton.component';
-import { IconBrandInstagram } from '@tabler/icons-react';
 import { TitleComponent } from '@/components/Title.component';
 import Link from 'next/link';
+import { IconBrandInstagram, IconBrandLinkedin, IconBrandX } from '@tabler/icons-react';
 
 export function IndexAboutContainer() {
 
@@ -81,19 +81,34 @@ export function IndexAboutContainer() {
               <p>I've been working as a programmer <span className='text-titleFontColor font-medium'>since 2022</span>, focusing on the <span className='text-titleFontColor font-medium'>Frontend</span> side of development (although I have <span className='text-titleFontColor font-medium'>solid knowledge</span> in <span className='text-titleFontColor font-medium'>Backend</span> as well).</p>
               <p>I really pay attention to <span className='text-titleFontColor font-medium'>details</span>, and I love exploring the <span className='text-titleFontColor font-medium'>multiple possibilities</span> that the front end of a web/application has to offer (notifications, input validations from users, adjusting content and design to various screen sizes, effects on different elements, etc).</p>
               <p>I've found that I really enjoy being part of a team where <span className='text-titleFontColor font-medium'>ideas</span> and <span className='text-titleFontColor font-medium'>solutions</span> come from <span className='text-titleFontColor font-medium'>all parties</span> involved in the development. These groups, where dialogue is encouraged, everyone is heard, and all opinions are weighed, in my experience, yield the <span className='text-titleFontColor font-medium'>best results</span>.</p>
+              <p>You can check out my social media if you want to know a little more about me in other aspects of my life.</p>
+              <div className='flex flex-row items-start gap-6 flex-wrap justify-start w-full'>
+                <Link href={'https://es.linkedin.com/in/armando-ramos-s%C3%A1nchez-0b678b102'} target='_blank'>
+                  <div className='text-titleFontColor hover:text-primaryColor2 ease-in-out duration-300'>
+                    <IconBrandLinkedin size={29} />
+                  </div>
+                </Link>
+                <Link href={'https://twitter.com/aramos_dev'} target='_blank'>
+                  <div className='text-titleFontColor hover:text-primaryColor2 ease-in-out duration-300'>
+                    <IconBrandX size={29} />
+                  </div>
+                </Link>
+                <Link href={'https://www.instagram.com/armandohyeah/'} target='_blank'>
+                  <div className='text-titleFontColor hover:text-primaryColor2 ease-in-out duration-300'>
+                    <IconBrandInstagram size={29} />
+                  </div>
+                </Link>
+              </div>
             </div>
             <div className='
-              flex flex-row items-center gap-6
-              min-[1023px]:w-auto w-full           
+              flex flex-col items-center gap-6
+              w-full           
               min-[1023px]:justify-start justify-center
               min-[379px]:text-[16px] text-[13px]
             '>
-              <a href={`${basePath}#Contact`}>
+              <a href={`${basePath}#Contact`} className=''>
                 <ButtonComponent text='HIRE ME' />
               </a>
-              <Link href={'https://www.instagram.com/armandohyeah/'} target='_blank'>
-                <SecondaryButton text='SOCIAL MEDIA' icon={<IconBrandInstagram />} />
-              </Link>
             </div>
           </div>
         </div>
