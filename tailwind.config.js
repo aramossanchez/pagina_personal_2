@@ -15,7 +15,9 @@ module.exports = {
         normalFontColor: 'var(--normalFontColor)',
         titleFontColor: 'var(--titleFontColor)',
         shadowColor: 'var(--shadowColor)',
-
+      },
+      boxShadow: {
+        'custom': '0px 5px 30px -1px var(--shadowColor)',
       }
     },
   },

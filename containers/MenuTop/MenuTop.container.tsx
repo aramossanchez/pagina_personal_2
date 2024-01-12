@@ -22,10 +22,10 @@ export function MenuTopContainer() {
 
   return (
     <section className={`${scrolled > 0 ? 'bg-backgroundColor' : 'bg-transparent'} fixed w-[100vw] z-50 ease-in-out duration-300`}>
-      <div className='
+      <div className={`${menuOpen ? '' : 'shadow-custom'}
         flex-row justify-center py-2 fixed top-0 w-[100vw] bg-backgroundColor z-50
         min-[1023px]:hidden flex
-      '>
+      `}>
         <Image
           src={`${basePath}images/logo.png`}
           width={30}
@@ -34,9 +34,9 @@ export function MenuTopContainer() {
           className='w-[30px] h-[30px] absolute left-2'
         />
         {menuOpen ?
-          <IconX onClick={() => setMenuOpen(false)} color='var(--primaryColor2)' size={30} className='cursor-pointer' />
+            <IconX className={`${style.menu_top_close} cursor-pointer`} onClick={() => setMenuOpen(false)} color='var(--primaryColor2)' size={30} />
           :
-          <IconMenu2 onClick={() => setMenuOpen(true)} color='var(--primaryColor2)' size={30} className='cursor-pointer' />
+            <IconMenu2 className={`${style.menu_top_open} cursor-pointer`} onClick={() => setMenuOpen(true)} color='var(--primaryColor2)' size={30} />
         }
         <a href={`${basePath}#Contact`}>
           <div className='absolute right-2'>
