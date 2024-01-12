@@ -18,12 +18,12 @@ export function SoftSkillComponent({ key = 0, image = '', text = '', label = '' 
       </div>
       <Image
         src={`${basePath}${image}`}
-        width={80}
-        height={80}
+        width={60}
+        height={60}
         alt="Logo"
-        className='min-[768px]:w-[80px] w-[50px] min-[768px]:h-[80px] h-[50px] z-[-1]'
+        className='min-[768px]:w-[60px] w-[45px] min-[768px]:h-[60px] h-[45px] z-[-1]'
       />
-      <span className='min-[768px]:text-xl text-lg'>{text}</span>
+      <span className='text-center min-[768px]:text-lg text-base'>{text}</span>
     </div>
   )
 }
