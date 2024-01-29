@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { basePath } from '../config/config';
+import { basePath } from '../../config/config';
 import Image from 'next/image';
+import style from './SoftSkill.module.css';
 
 export function SoftSkillComponent({ key = 0, image = '', text = '', label = '' }) {
 
@@ -13,7 +14,7 @@ export function SoftSkillComponent({ key = 0, image = '', text = '', label = '' 
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <div className={`${hover ? 'block' : 'hidden'} absolute top-[-4em] w-[200px] text-sm bg-black border-[1px] border-primaryColor2 text-white px-2 py-1`}>
+      <div className={`${style.tooltip_soft_skill} ${hover ? 'block' : 'hidden'} absolute top-[-4em] w-[200px] text-sm bg-black border-[1px] border-primaryColor2 text-white px-2 py-1`}>
         <span className=''>{label}</span>
       </div>
       <Image
