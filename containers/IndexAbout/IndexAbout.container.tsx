@@ -6,6 +6,7 @@ import { SecondaryButton } from '@/components/SecondaryButton.component';
 import { TitleComponent } from '@/components/Title.component';
 import Link from 'next/link';
 import { IconBrandInstagram, IconBrandLinkedin, IconBrandX } from '@tabler/icons-react';
+import { TooltipComponent } from '@/components/Tooltip/Tooltip.component';
 
 export function IndexAboutContainer() {
 
@@ -83,21 +84,28 @@ export function IndexAboutContainer() {
               <p>I've found that I really enjoy being part of a team where <span className='text-titleFontColor font-medium'>ideas</span> and <span className='text-titleFontColor font-medium'>solutions</span> come from <span className='text-titleFontColor font-medium'>all parties</span> involved in the development. These groups, where dialogue is encouraged, everyone is heard, and all opinions are weighed, in my experience, yield the <span className='text-titleFontColor font-medium'>best results</span>.</p>
               <p>You can check out my social media if you want to know a little more about me in other aspects of my life.</p>
               <div className='flex flex-row items-start gap-6 flex-wrap justify-start w-full'>
-                <Link href={'https://es.linkedin.com/in/armando-ramos-s%C3%A1nchez-0b678b102'} target='_blank'>
-                  <div className='text-titleFontColor hover:text-primaryColor2 ease-in-out duration-300'>
-                    <IconBrandLinkedin size={29} />
-                  </div>
-                </Link>
-                <Link href={'https://twitter.com/aramos_dev'} target='_blank'>
-                  <div className='text-titleFontColor hover:text-primaryColor2 ease-in-out duration-300'>
-                    <IconBrandX size={29} />
-                  </div>
-                </Link>
-                <Link href={'https://www.instagram.com/armandohyeah/'} target='_blank'>
-                  <div className='text-titleFontColor hover:text-primaryColor2 ease-in-out duration-300'>
-                    <IconBrandInstagram size={29} />
-                  </div>
-                </Link>
+
+                <TooltipComponent label={'Linkedin'}>
+                  <Link href={'https://es.linkedin.com/in/armando-ramos-s%C3%A1nchez-0b678b102'} target='_blank'>
+                    <div className='text-titleFontColor hover:text-primaryColor2 ease-in-out duration-300'>
+                      <IconBrandLinkedin size={29} />
+                    </div>
+                  </Link>
+                </TooltipComponent>
+                <TooltipComponent label={'X (Twitter)'}>
+                  <Link href={'https://twitter.com/aramos_dev'} target='_blank'>
+                    <div className='text-titleFontColor hover:text-primaryColor2 ease-in-out duration-300'>
+                      <IconBrandX size={29} />
+                    </div>
+                  </Link>
+                </TooltipComponent>
+                <TooltipComponent label={'Instagram'}>
+                  <Link href={'https://www.instagram.com/armandohyeah/'} target='_blank'>
+                    <div className='text-titleFontColor hover:text-primaryColor2 ease-in-out duration-300'>
+                      <IconBrandInstagram size={29} />
+                    </div>
+                  </Link>
+                </TooltipComponent>
               </div>
             </div>
             <div className='
