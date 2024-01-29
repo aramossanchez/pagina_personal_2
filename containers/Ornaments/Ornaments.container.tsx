@@ -21,7 +21,7 @@ export function OrnamentsContainer() {
       `}></span>
       <span className={`
         ${style.bubble_animated_index_presentation_second}
-        w-[10vw] h-[10vw] rounded-full absolute min-[1023px]:border-8 border-4 border-primaryColor2 right-[-3%] top-[250vh] leading-none origin-center -rotate-[20deg]
+        w-[10vw] h-[10vw] rounded-full absolute min-[1023px]:border-8 border-4 border-primaryColor2 right-[-3%] top-[250vh] opacity-50 leading-none origin-center -rotate-[20deg]
       `}></span>
       <span className={`
         ${style.square_animated_index_presentation_second}

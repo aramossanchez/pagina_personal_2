@@ -5,17 +5,21 @@ import { TitleComponent } from '@/components/Title.component';
 import style from './IndexContact.module.css';
 
 import { useState } from 'react';
+import { UseIndexContact } from './IndexContact.hook';
 
 export function IndexContactContainer() {
 
-  const [nameToEmail, setNameToEmail] = useState('');
-  const [emailToEmail, setEmailToEmail] = useState('');
-  const [bodyToEmail, setBodyToEmail] = useState('');
-
-  function sendMail() {
-    const mailtoLink = `mailto:armandoramossanchez@gmail.com?subject=${encodeURIComponent(nameToEmail)}&body=${encodeURIComponent(bodyToEmail)}`;
-    window.location.href = mailtoLink;
-  }
+  const { 
+    nameToEmail,
+    bodyToEmail,
+    setNameToEmail,
+    setEmailToEmail,
+    setBodyToEmail,
+    nameToEmailCorrect,
+    emailToEmailCorrect,
+    bodyToEmailCorrect,
+    checkForm
+  } = UseIndexContact();
 
   return (
     <section id='Contact' className='
@@ -36,12 +40,21 @@ export function IndexContactContainer() {
             Send me an email through this form.
           </p>
         </div>
-        <div className={`${style.form} flex flex-col items-center gap-5 md:w-[500px] w-[350px] p-5 bg-gradient-to-r from-primaryColor2 to-primaryColor1 rounded-lg`}>
-          <InputComponent placeholder='Name' setHook={setNameToEmail} />
-          <InputComponent placeholder='Email' setHook={setEmailToEmail} />
-          <TextareaComponent placeholder='Message' setHook={setBodyToEmail} />
+        <div className={`${style.form} flex flex-col items-center gap-1 md:w-[500px] w-[350px] p-5 bg-gradient-to-r from-primaryColor2 to-primaryColor1 rounded-lg`}>
+          <div className='w-full flex flex-col'>
+            <InputComponent placeholder='Name' setHook={setNameToEmail} correct={nameToEmailCorrect} />
+            <span className={`${nameToEmailCorrect ? 'text-transparent' : 'text-black'} font-semibold px-2 text-sm`}>The field needs at least 3 characters</span>
+          </div>
+          <div className='w-full flex flex-col'>
+            <InputComponent placeholder='Email' setHook={setEmailToEmail} correct={emailToEmailCorrect} />
+            <span className={`${emailToEmailCorrect ? 'text-transparent' : 'text-black'} font-semibold px-2 text-sm`}>The email is not in the correct format</span>
+          </div>
+          <div className='w-full flex flex-col'>
+            <TextareaComponent placeholder='Message' setHook={setBodyToEmail} correct={bodyToEmailCorrect} />
+            <span className={`${bodyToEmailCorrect ? 'text-transparent' : 'text-black'} font-semibold px-2 text-sm`}>The field needs at least 3 characters</span>
+          </div>
           <button
-            onClick={sendMail}
+            onClick={() => checkForm()}
             className='px-3 py-1 text-titleFontColor font-medium bg-backgroundColor rounded-lg cursor-pointer hover:brightness-125 ease-in-out duration-300 flex flex-row items-center gap-2'
           >
             Send
