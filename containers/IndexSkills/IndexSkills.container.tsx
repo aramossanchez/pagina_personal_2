@@ -18,9 +18,9 @@ export function IndexSkillsContainer() {
         <div className='flex flex-col items-center gap-9 w-full'>
           <span className='text-center w-full text-primaryColor2 font-medium text-3xl'>Hard skills</span>
           <div className='
-            flex-row items-center justify-center gap-8 flex-wrap px-10
+            grid items-center justify-center gap-8 px-10
             xl:w-[1200px] md:w-[700px] w-[350px]
-            md:flex md:flex-grow grid grid-cols-2
+            xl:grid-cols-10 md:grid-cols-5 grid-cols-2
           '>
             {hardSkills.map((skill, index) => {
               return (
@@ -32,7 +32,7 @@ export function IndexSkillsContainer() {
         <div className='flex flex-col items-center gap-9 w-full'>
           <span className='text-center w-full text-primaryColor2 font-medium text-3xl'>Soft skills</span>
           <div className='
-            grid items-center justify-center gap-8 flex-wrap px-10
+            grid items-center justify-center gap-8 px-10
             xl:w-[1200px] md:w-[700px] w-[350px]
             xl:grid-cols-5 md:grid-cols-4 grid-cols-2
           '>
