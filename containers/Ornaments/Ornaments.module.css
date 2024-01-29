@@ -3,31 +3,170 @@
 	animation: float_circle_first 40s ease-in-out infinite;
 }
 
+.bubble_animated_index_presentation_second {
+	transform: translateX(0px) scale(1);
+	animation: float_circle_second 40s ease-in-out infinite;
+}
+
+.bubble_animated_index_presentation_third {
+	transform: translateX(0px) scale(1);
+	animation: float_circle_third 30s ease-in-out infinite;
+}
+
 .square_animated_index_presentation_first {
 	transform: translateX(0px) translateY(0px) rotate(-10deg);
 	animation: float_square_first 50s ease-in-out infinite;
 }
 
+.square_animated_index_presentation_second {
+	transform: translateX(0px) translateY(0px) rotate(-10deg);
+	animation: float_square_second 50s ease-in-out infinite;
+}
+
+.square_animated_index_presentation_third {
+	transform: translateX(0px) translateY(0px) rotate(-10deg);
+	animation: float_square_third 50s ease-in-out infinite;
+}
+
+.square_animated_index_presentation_fourth {
+	transform: translateX(0px) translateY(0px) rotate(-10deg);
+	animation: float_square_fourth 120s ease-in-out infinite;
+}
+
+.triangle_animated_index_presentation_first {
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	transform: translateX(0px) translateY(0px) rotate(-10deg);
+	animation: float_triangle_first 90s ease-in-out infinite;
+}
+
+.triangle_animated_index_presentation_second {
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	transform: translateX(0px) translateY(0px) rotate(-10deg);
+	animation: float_triangle_second 90s ease-in-out infinite;
+}
+
 @keyframes float_circle_first {
 	0% {
-    transform: translateX(0px) scale(1);
+		transform: translateX(0px) scale(1);
 	}
+
 	50% {
-	  transform: translateX(-80px) scale(0.5);
+		transform: translateX(-80px) scale(0.5);
 	}
+
 	100% {
-    transform: translateX(0px) scale(1);
+		transform: translateX(0px) scale(1);
+	}
+}
+
+@keyframes float_circle_second {
+	0% {
+		transform: translateX(0px) translateY(0);
+	}
+
+	50% {
+		transform: translateX(-50px) translateY(-50px);
+	}
+
+	100% {
+		transform: translateX(0px) translateY(0);
+	}
+}
+
+@keyframes float_circle_third {
+	0% {
+		transform: translateX(0px);
+	}
+
+	50% {
+		transform: translateX(50px);
+	}
+
+	100% {
+		transform: translateX(0px);
 	}
 }
 
 @keyframes float_square_first {
 	0% {
-    transform: translateX(0px) translateY(0px) rotate(-10deg);
+		transform: translateX(0px) translateY(0px) rotate(-10deg);
 	}
+
 	50% {
-    transform: translateX(50px) translateY(-85vh) rotate(108deg);
+		transform: translateX(50px) translateY(-85vh) rotate(108deg);
 	}
+
 	100% {
-    transform: translateX(0px) translateY(0px) rotate(-10deg);
+		transform: translateX(0px) translateY(0px) rotate(-10deg);
+	}
+}
+
+@keyframes float_square_second {
+	0% {
+		transform: rotate(-10deg);
+	}
+
+	50% {
+		transform: rotate(108deg);
+	}
+
+	100% {
+		transform: rotate(-10deg);
+	}
+}
+
+@keyframes float_square_third {
+	0% {
+		transform: translateX(0px) translateY(0px) rotate(10deg);
+	}
+
+	50% {
+		transform: translateX(50px) translateY(-85vh) rotate(108deg);
+	}
+
+	100% {
+		transform: translateX(0px) translateY(0px) rotate(10deg);
+	}
+}
+
+@keyframes float_square_fourth {
+	0% {
+		transform: translateX(0px) translateY(0px) rotate(10deg);
+	}
+
+	50% {
+		transform: translateX(50px) translateY(-60px) rotate(108deg);
+	}
+
+	100% {
+		transform: translateX(0px) translateY(0px) rotate(10deg);
+	}
+}
+
+@keyframes float_triangle_first {
+	0% {
+		transform: rotate(-10deg);
+	}
+
+	50% {
+		transform: rotate(108deg);
+	}
+
+	100% {
+		transform: rotate(-10deg);
+	}
+}
+
+@keyframes float_triangle_second {
+	0% {
+		transform: translateX(0px) rotate(-10deg);
+	}
+
+	50% {
+		transform: translateX(-60px) rotate(108deg);
+	}
+
+	100% {
+		transform: translateX(0px) rotate(-10deg);
 	}
 }
