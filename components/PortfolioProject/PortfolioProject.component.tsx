@@ -48,7 +48,7 @@ export function PortfolioProjectComponent({ key = 0, projectNumber = 0, projectN
                 height={310}
                 objectFit='fill'
                 className='
-                      grayscale-0 z-30 relative rounded-lg hover:grayscale ease-in-out duration-300 cursor-pointer
+                      grayscale-0 z-30 relative rounded-lg hover:grayscale ease-in-out duration-300
                       min-[1023px]:w-full w-11/12
                       min-[1023px]:h-[300px] h-[50vw]
                     '/>
