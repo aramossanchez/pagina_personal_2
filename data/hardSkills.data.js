@@ -20,12 +20,12 @@ const hardSkills = [
     Text: 'Tailwind'
   },
   {
-    Image: 'images/css_icon.svg',
-    Text: 'CSS'
+    Image: 'images/html_icon.svg',
+    Text: 'HTML'
   },
   {
-    Image: 'images/sass_icon.svg',
-    Text: 'SASS'
+    Image: 'images/css_icon.svg',
+    Text: 'CSS'
   },
   {
     Image: 'images/angular_icon.svg',

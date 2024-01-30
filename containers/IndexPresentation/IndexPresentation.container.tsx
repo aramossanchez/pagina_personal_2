@@ -1,5 +1,6 @@
 import { ButtonComponent } from '@/components/Button.component';
 import { IconDownload } from '@tabler/icons-react';
+import Link from 'next/link';
 
 export function IndexPresentationContainer() {
 
@@ -34,7 +35,9 @@ export function IndexPresentationContainer() {
           </span>
         </span>
         <div className='text-xl mt-5'>
-        <ButtonComponent text='Download my CV' icon={<IconDownload />}/>
+          <Link href={'https://drive.google.com/file/d/1HjOEI5h0eapkYHm0vgba8I2JVEZ-5Hdl/view?usp=drive_link'} target='_blank'>
+            <ButtonComponent text='Download my CV' icon={<IconDownload />} />
+          </Link>
         </div>
       </div>
     </section>
