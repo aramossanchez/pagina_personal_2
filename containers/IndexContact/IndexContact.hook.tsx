@@ -30,8 +30,6 @@ export function UseIndexContact() {
   // }
 
   return {
-    nameToEmail,
-    bodyToEmail,
     setNameToEmail,
     setEmailToEmail,
     setBodyToEmail,

@@ -8,7 +8,7 @@ const portfolioProjects = [
   },
   {
     ProjectName: 'Página web para Neuropsicóloga',
-    Explanation: 'Página web diseñada para trabajadora del sector de la neuropsicología. Página dividida en diferentes secciones, y todas sus secciones están modularizadas, para poder traer datos de archivos json. El sitio web tiene un diseño totalmente responsive. Sitio web hecho con Next.js',
+    Explanation: 'Página web diseñada para trabajadora del sector de la neuropsicología. Cada sección de la web es un container dentro de la app, lo que facilita enormemente su edición, cambio y escalabilidad. Sitio web hecho con Next.js',
     Image: 'images/pagina_carmina.jpg',
     Url: 'https://github.com/aramossanchez/pagina_carmina',
     Orientation: 'right'

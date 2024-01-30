@@ -1,17 +1,13 @@
-import { ButtonComponent } from '@/components/Button.component';
 import { InputComponent } from '@/components/Input.component';
 import { TextareaComponent } from '@/components/TextArea/Textarea.component';
 import { TitleComponent } from '@/components/Title.component';
 import style from './IndexContact.module.css';
 
-import { useState } from 'react';
 import { UseIndexContact } from './IndexContact.hook';
 
 export function IndexContactContainer() {
 
-  const { 
-    nameToEmail,
-    bodyToEmail,
+  const {
     setNameToEmail,
     setEmailToEmail,
     setBodyToEmail,
