@@ -10,7 +10,7 @@ export function IndexExperienceContainer() {
       z-10 w-[100vw] relative overflow-x-hidden flex flex-col justify-center items-center h-full pt-16
     '>
       <div className='w-full flex-row mb-16 justify-center flex'>
-        <TitleComponent text='Experience' />
+        <TitleComponent text='Experiencia' />
       </div>
       {/* CONTENEDOR DE EXPERIENCIAS */}
       <div className='

@@ -20,12 +20,12 @@ export function PortfolioProjectComponent({ key = 0, projectNumber = 0, projectN
           min-[1023px]:w-6/12 w-full
           ${orientation === 'right' ? 'min-[1023px]:order-2 order-1 min-[1023px]:pl-10 pl-0' : ''}
           `}>
-          <span className=' text-primaryColor2 text-2xl'>Project {projectNumber}</span>
+          <span className=' text-primaryColor2 text-2xl'>Proyecto {projectNumber}</span>
           <span className=' text-titleFontColor text-2xl'>{projectName}</span>
           <p>{explanation}</p>
           <Link href={url} className='flex flex-row gap-3 hover:text-primaryColor2 ease-in-out duration-300' target='_blank'>
             <IconArrowNarrowRight />
-            <span>Read more</span>
+            <span>Leer más</span>
           </Link>
         </div>
         <div className={`

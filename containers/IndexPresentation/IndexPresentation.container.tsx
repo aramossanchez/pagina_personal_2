@@ -14,7 +14,7 @@ export function IndexPresentationContainer() {
           text-normalFontColor mb-1
           min-[1023px]:text-6xl min-[673px]:text-5xl min-[366px]:text-4xl text-3xl
         '>
-          I'm a
+          Armando Ramos
         </span>
         <span className='
           text-titleFontColor
@@ -36,7 +36,7 @@ export function IndexPresentationContainer() {
         </span>
         <div className='text-xl mt-5'>
           <Link href={'https://drive.google.com/file/d/1HjOEI5h0eapkYHm0vgba8I2JVEZ-5Hdl/view?usp=drive_link'} target='_blank'>
-            <ButtonComponent text='Download my CV' icon={<IconDownload />} />
+            <ButtonComponent text='Descarga mi CV' icon={<IconDownload />} />
           </Link>
         </div>
       </div>

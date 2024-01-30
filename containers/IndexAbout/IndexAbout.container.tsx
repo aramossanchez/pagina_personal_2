@@ -28,7 +28,7 @@ export function IndexAboutContainer() {
             w-full flex-row mb-16 justify-center
             min-[1023px]:hidden flex
           '>
-            <TitleComponent text='About Me' />
+            <TitleComponent text='Sobre mí' />
           </div>
           <div className='
             w-full flex flex-row
@@ -70,7 +70,7 @@ export function IndexAboutContainer() {
             <div className='
               min-[1023px]:block hidden
             '>
-              <TitleComponent text='About Me' />
+              <TitleComponent text='Sobre mi' />
             </div>
             {/* TEXTO EN ESPAÑOL */}
             {/* <p className='text-lg mt-8'>Trabajo como programador <span className='text-titleFontColor font-medium'> desde 2022</span>, focalizado en la parte <span className='text-titleFontColor font-medium'>Frontend</span> del desarrollo (aunque tengo <span className='text-titleFontColor font-medium'>firmes conocimientos</span> sobre la parte <span className='text-titleFontColor font-medium'>Backend</span>).</p>
@@ -79,10 +79,10 @@ export function IndexAboutContainer() {
 
             {/* TEXTO EN INGLÉS */}
             <div className='w-full flex flex-col gap-3'>
-              <p>I've been working as a programmer <span className='text-titleFontColor font-medium'>since 2022</span>, focusing on the <span className='text-titleFontColor font-medium'>Frontend</span> side of development (although I have <span className='text-titleFontColor font-medium'>solid knowledge</span> in <span className='text-titleFontColor font-medium'>Backend</span> as well).</p>
-              <p>I really pay attention to <span className='text-titleFontColor font-medium'>details</span>, and I love exploring the <span className='text-titleFontColor font-medium'>multiple possibilities</span> that the front end of a web/application has to offer (notifications, input validations from users, adjusting content and design to various screen sizes, effects on different elements, etc).</p>
-              <p>I've found that I really enjoy being part of a team where <span className='text-titleFontColor font-medium'>ideas</span> and <span className='text-titleFontColor font-medium'>solutions</span> come from <span className='text-titleFontColor font-medium'>all parties</span> involved in the development. These groups, where dialogue is encouraged, everyone is heard, and all opinions are weighed, in my experience, yield the <span className='text-titleFontColor font-medium'>best results</span>.</p>
-              <p>You can check out my social media if you want to know a little more about me in other aspects of my life.</p>
+              <p>Llevo trabajando como desarrollador <span className='text-titleFontColor font-medium'>desde el 2022</span>, enfocado en la parte <span className='text-titleFontColor font-medium'>Frontend</span> del desarrollo (aunque también tengo <span className='text-titleFontColor font-medium'>conocimientos sólidos</span> en la parte <span className='text-titleFontColor font-medium'>Backend</span>).</p>
+              <p>Presto mucha atención a los <span className='text-titleFontColor font-medium'>detalles</span>, y me encanta explorar las <span className='text-titleFontColor font-medium'>multiples posibilidades</span> que ofrece la parte frontend de una aplicación (notificaciones, validaciones de input para usuarios, ajustes de contenido y diseño para distintos tamaños de pantalla, efectos y animaciones en elementos de la web, etc).</p>
+              <p>He descubierto que me encanta formar parte de un equipo donde las <span className='text-titleFontColor font-medium'>ideas</span> y <span className='text-titleFontColor font-medium'>soluciones</span> vienen <span className='text-titleFontColor font-medium'>de todas las partes</span> implicadas en el desarrollo. Estos grupos en los que el diálogo es promovido, todo el mundo es escuchado y todas las opiniones cuentan, en mi experiencia, alcanzan los <span className='text-titleFontColor font-medium'>mejores resultados</span>.</p>
+              <p>Puedes echarle un ojo a mis redes sociales por si quieres cotillear un poco sobre otras cosas de mí.</p>
               <div className='flex flex-row items-start gap-6 flex-wrap justify-start w-full'>
 
                 <TooltipComponent label={'Linkedin'}>
@@ -115,7 +115,7 @@ export function IndexAboutContainer() {
               min-[379px]:text-[16px] text-[13px]
             '>
               <a href={`${basePath}#Contact`} className=''>
-                <ButtonComponent text='HIRE ME' />
+                <ButtonComponent text='CONTACTA CONMIGO' />
               </a>
             </div>
           </div>

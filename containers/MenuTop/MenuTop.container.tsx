@@ -40,7 +40,7 @@ export function MenuTopContainer() {
         }
         <a href={`${basePath}#Contact`}>
           <div className='absolute right-2'>
-            <ButtonComponent text='CONTACT' withPadding={false} />
+            <ButtonComponent text='CONTACTA' withPadding={false} />
           </div>
         </a>
       </div>
@@ -79,12 +79,12 @@ export function MenuTopContainer() {
           `}>
             <a href={`${basePath}#Home`} onClick={() => setMenuOpen(false)}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
-                HOME
+                INICIO
               </span>
             </a>
             <a href={`${basePath}#Experience`} onClick={() => setMenuOpen(false)}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
-                EXPERIENCE
+                EXPERIENCIA
               </span>
             </a>
             <a href={`${basePath}#Portfolio`} onClick={() => setMenuOpen(false)}>
@@ -94,7 +94,7 @@ export function MenuTopContainer() {
             </a>
             <a href={`${basePath}#About`} onClick={() => setMenuOpen(false)}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
-                ABOUT ME
+                SOBRE MÍ
               </span>
             </a>
             <a href={`${basePath}#Skills`} onClick={() => setMenuOpen(false)}>
@@ -105,7 +105,7 @@ export function MenuTopContainer() {
           </div>
           <a href={`${basePath}#Contact`} onClick={() => setMenuOpen(false)}>
             <div className='min-[1023px]:block hidden'>
-              <ButtonComponent text='CONTACT' withPadding={scrolled > 0 ? false : true} />
+              <ButtonComponent text='CONTACTA' withPadding={scrolled > 0 ? false : true} />
             </div>
           </a>
         </div>

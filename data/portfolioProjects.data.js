@@ -1,28 +1,28 @@
 const portfolioProjects = [
   {
     ProjectName: 'Sudoku solver',
-    Explanation: "Algorithm designed to solve a sudoku. You have access to a typical sudoku grid, where you can fill in any squares with the numbers you choose. By pressing the validate button, the application will solve the sudoku (as long as the numbers entered don't make the sudoku incorrect and impossible to solve).",
+    Explanation: "Algoritmo diseñado para resolver un sudoku. Tienes acceso a una típica cuadrícula de sudoku, donde puedes rellenar cualquier cuadrado con los números que elijas. Al presionar el botón validar, la aplicación resolverá el sudoku (siempre que los números ingresados ​​no hagan que el sudoku sea incorrecto e imposible de resolver).",
     Image: 'images/profile.jpg',
     Url: 'https://github.com/aramossanchez/sudoku_solver',
     Orientation: 'left'
   },
   {
-    ProjectName: 'Portfolio for neuropsychology worker',
-    Explanation: 'Portfolio designed for workers in the neuropsychology sector. Page divided into different sections, and all its sections are modularized, to be able to bring data from json filesThe website has a fully responsive design. Website made with Next.js',
+    ProjectName: 'Página web para Neuropsicóloga',
+    Explanation: 'Página web diseñada para trabajadora del sector de la neuropsicología. Página dividida en diferentes secciones, y todas sus secciones están modularizadas, para poder traer datos de archivos json. El sitio web tiene un diseño totalmente responsive. Sitio web hecho con Next.js',
     Image: 'images/pagina_carmina.jpg',
     Url: 'https://github.com/aramossanchez/pagina_carmina',
     Orientation: 'right'
   },
   {
     ProjectName: 'Email sender',
-    Explanation: 'Application used to send emails. Has a custom endpoint for each website that wants to use it. The emails it sends have a completely personalized design depending on the website that uses them. Developed in deno, and deployed in Deno deploy.',
+    Explanation: 'Aplicación utilizada para enviar correos electrónicos. Tiene un endpoint personalizado para cada sitio web que quiera utilizarlo. Los correos electrónicos que envía tienen un diseño completamente personalizado dependiendo del sitio web que los utiliza. Desarrollado en deno e implementado en Deno deploy.',
     Image: 'images/mailer.jpg',
     Url: 'https://github.com/aramossanchez/mailer',
     Orientation: 'left'
   },
   {
-    ProjectName: 'Turn based rpg game',
-    Explanation: 'Video game made with vanilla javascript. Turn-based combat game, where you can select 4 characters out of a total of 8. It has an instruction manual to know the skills of each character and learn the basic operation of the game. Optimized for computer screen (it will not display correctly on tablet or mobile).',
+    ProjectName: 'Juego de rol por turnos',
+    Explanation: 'Videojuego realizado con Javascript vanilla. Juego de combate por turnos, donde podrás seleccionar 4 personajes de un total de 8. Cuenta con un manual de instrucciones para conocer las habilidades de cada personaje y aprender el funcionamiento básico del juego. Optimizado para pantalla de PC (no se visualizará correctamente en tablet o dispositivo móvil).',
     Image: 'images/Videojuego_JS.jpg',
     Url: 'https://github.com/aramossanchez/Videojuego_JS',
     Orientation: 'right'

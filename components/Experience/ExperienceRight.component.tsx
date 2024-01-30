@@ -51,7 +51,7 @@ export function ExperienceRightComponent({ experience }: { experience: Experienc
           </span>
         </div>
         <div className='flex flex-col gap-2'>
-          <span>Projects I participated in:</span>
+          <span>Proyectos en los que he participado:</span>
           {/* LISTADO DE PROYECTOS */}
           {experience.projects.map((project) => {
             return (
@@ -67,7 +67,7 @@ export function ExperienceRightComponent({ experience }: { experience: Experienc
                   <span>{project.explanation}</span>
                 </div>
                 <span className='flex my-2 flex-col items-start'>
-                  <span className='text-titleFontColor'>Technologies used</span>
+                  <span className='text-titleFontColor'>Tecnologías usadas</span>
                   <div className='flex flex-row items-center gap-2 my-2'>
                     {project.technologies.map((technology) => {
                       return (

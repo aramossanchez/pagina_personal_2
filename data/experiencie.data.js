@@ -4,12 +4,12 @@ const experiences = [
     role: 'Frontend Developer',
     company: 'Geekshubs',
     init_date: '2022',
-    finish_date: 'Present time',
+    finish_date: 'Actualidad',
     projects: [
       {
         name: 'Geekup',
         url: 'https://app.geekup.es',
-        explanation: 'Web application for validating programming languages through multiple-choice tests and automated code tests. Area for companies to manage staff (creation of project from scratch, development of features).',
+        explanation: 'Aplicación web para la validación de lenguajes de programación mediante pruebas de opción múltiple y pruebas de código automatizadas. Área de empresas para gestión de personal (creación de proyecto desde cero, desarrollo de funcionalidades).',
         technologies: [
           {
             name: 'Next.js',
@@ -36,7 +36,7 @@ const experiences = [
       {
         name: 'Captend',
         url: 'https://captend.com/login' ,
-        explanation: 'Web application based on the creation of legal texts from smart templates. (creation of project from scratch, development of features).',
+        explanation: 'Aplicación web basada en la creación de textos legales a partir de plantillas inteligentes. (creación de proyecto desde cero, desarrollo de funcionalidades).',
         technologies: [
           {
             name: 'Next.js',
@@ -59,7 +59,7 @@ const experiences = [
       {
         name: 'Nexo',
         url: null,
-        explanation: 'ERP for telecommunications company (bug localization and resolution, creation of new features, code maintenance).',
+        explanation: 'ERP para empresa de telecomunicaciones (localización y resolución de errores, creación de nuevas funcionalidades, mantenimiento de código).',
         technologies: [
           {
             name: 'Angular',
@@ -87,7 +87,7 @@ const experiences = [
       {
         name: 'CLB',
         url: null,
-        explanation: 'Widget on a website dedicated to purchasing luxury makeup items (project creation from scratch, website replication) (not finished).',
+        explanation: 'Widget en un sitio web dedicado a la compra de artículos de maquillaje de lujo (creación de proyectos desde cero, replicación de sitios web) (no terminado).',
         technologies: [
           {
             name: 'React',
@@ -106,7 +106,7 @@ const experiences = [
       {
         name: 'Riversa',
         url: null ,
-        explanation: 'Website dedicated to purchasing garden items (project creation from scratch) (not finished).',
+        explanation: 'Página web dedicada a la compra de artículos de jardinería (creación de proyecto desde cero) (no terminada).',
         technologies: [
           {
             name: 'React',
@@ -125,7 +125,7 @@ const experiences = [
       {
         name: 'Nex',
         url: 'https://www.nex.es',
-        explanation: 'Web application dedicated to purchasing tires (bug localization and resolution, creation of new features).',
+        explanation: 'Aplicación web dedicada a la compra de neumáticos (localización y resolución de errores, creación de nuevas funcionalidades).',
         technologies: [
           {
             name: 'React',
