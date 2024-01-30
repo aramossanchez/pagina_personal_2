@@ -20,7 +20,7 @@ export function IndexSkillsContainer() {
           <div className='
             grid items-center justify-center gap-8 px-10
             xl:w-[1200px] md:w-[700px] w-[350px]
-            xl:grid-cols-10 md:grid-cols-5 grid-cols-2
+            xl:grid-cols-12 md:grid-cols-6 grid-cols-2
           '>
             {hardSkills.map((skill, index) => {
               return (

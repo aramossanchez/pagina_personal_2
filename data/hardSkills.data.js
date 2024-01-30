@@ -28,6 +28,14 @@ const hardSkills = [
     Text: 'CSS'
   },
   {
+    Image: 'images/docker_icon.svg',
+    Text: 'Docker'
+  },
+  {
+    Image: 'images/express_icon.svg',
+    Text: 'Express'
+  },
+  {
     Image: 'images/angular_icon.svg',
     Text: 'Angular'
   },
