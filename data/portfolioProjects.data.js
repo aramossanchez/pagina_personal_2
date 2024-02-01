@@ -1,21 +1,21 @@
 const portfolioProjects = [
   {
     ProjectName: 'Sudoku solver',
-    Explanation: "Algoritmo diseñado para resolver un sudoku. Tienes acceso a una típica cuadrícula de sudoku, donde puedes rellenar cualquier cuadrado con los números que elijas. Al presionar el botón validar, la aplicación resolverá el sudoku (siempre que los números ingresados ​​no hagan que el sudoku sea incorrecto e imposible de resolver).",
+    Explanation: "Algoritmo diseñado para resolver un sudoku. Desarrollado en Next.js. Tienes acceso a una típica cuadrícula de sudoku, donde puedes rellenar cualquier cuadrado con los números que elijas. Al presionar el botón validar, la aplicación resolverá el sudoku (siempre que los números ingresados ​​no hagan que el sudoku sea incorrecto e imposible de resolver).",
     Image: 'images/profile.jpg',
     Url: 'https://github.com/aramossanchez/sudoku_solver',
     Orientation: 'left'
   },
   {
-    ProjectName: 'Página web para Neuropsicóloga',
-    Explanation: 'Página web diseñada para trabajadora del sector de la neuropsicología. Cada sección de la web es un container dentro de la app, lo que facilita enormemente su edición, cambio y escalabilidad. Sitio web hecho con Next.js',
+    ProjectName: 'Portfolio para profesional de la neuropsicología',
+    Explanation: 'Página web diseñada para trabajadora del sector de la neuropsicología. Desarrollado con Next.js. Cada sección de la web es un componente individual dentro de la app, lo que facilita enormemente su edición, cambio y escalabilidad.',
     Image: 'images/pagina_carmina.jpg',
     Url: 'https://github.com/aramossanchez/pagina_carmina',
     Orientation: 'right'
   },
   {
     ProjectName: 'Email sender',
-    Explanation: 'Aplicación utilizada para enviar correos electrónicos. Tiene un endpoint personalizado para cada sitio web que quiera utilizarlo. Los correos electrónicos que envía tienen un diseño completamente personalizado dependiendo del sitio web que los utiliza. Desarrollado en deno e implementado en Deno deploy.',
+    Explanation: 'Aplicación utilizada para enviar correos electrónicos. Desarrollada en Express y Deno, y dockerizada. El endpoint del que dispone envía 2 correos electrónicos distintos, con información que depende del body de la petición post que ataca al endpoint. Los correos electrónicos que envía tienen un diseño completamente personalizado. Proyecto con gran escalabilidad.',
     Image: 'images/mailer.jpg',
     Url: 'https://github.com/aramossanchez/mailer',
     Orientation: 'left'
