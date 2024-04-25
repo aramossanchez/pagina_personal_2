@@ -25,7 +25,7 @@ export function PortfolioProjectComponent({ key = 0, projectNumber = 0, projectN
           <p>{explanation}</p>
           <Link href={url} className='flex flex-row gap-3 hover:text-primaryColor2 ease-in-out duration-300' target='_blank'>
             <IconArrowNarrowRight />
-            <span>Leer más</span>
+            <span>Ver repositorio</span>
           </Link>
         </div>
         <div className={`

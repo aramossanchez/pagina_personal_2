@@ -12,7 +12,7 @@ export function IndexAboutContainer() {
 
   return (
     <section id='About' className='
-      z-10 w-[100vw] relative overflow-x-hidden flex flex-row justify-center pt-[30vh] h-full
+      z-10 w-[100vw] relative overflow-x-hidden flex flex-row justify-center pt-20 pb-48 h-full
     '>
       <div className='
         mt-10 flex items-start gap-20

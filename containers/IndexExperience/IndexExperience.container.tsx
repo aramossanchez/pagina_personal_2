@@ -7,7 +7,7 @@ export function IndexExperienceContainer() {
 
   return (
     <section id="Experience" className='
-      z-10 w-[100vw] relative overflow-x-hidden flex flex-col justify-center items-center h-full pt-16
+      z-10 w-[100vw] relative overflow-x-hidden flex flex-col justify-center items-center h-full pt-20 pb-48
     '>
       <div className='w-full flex-row mb-16 justify-center flex'>
         <TitleComponent text='Experiencia' />
