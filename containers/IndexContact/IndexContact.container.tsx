@@ -9,17 +9,15 @@ export function IndexContactContainer() {
 
   const {
     setNameToEmail,
-    setEmailToEmail,
     setBodyToEmail,
     nameToEmailCorrect,
-    emailToEmailCorrect,
     bodyToEmailCorrect,
     checkForm
   } = UseIndexContact();
 
   return (
     <section id='Contact' className='
-      z-10 w-[100vw] relative overflow-x-hidden flex flex-col justify-center items-center h-full pt-40 pb-10
+      z-10 w-[100vw] relative overflow-x-hidden flex flex-col justify-center items-center h-full pt-20 pb-10
     '>
       <div className='w-full flex-row mb-16 justify-center flex'>
         <TitleComponent text='Contacto' />
@@ -33,24 +31,20 @@ export function IndexContactContainer() {
             Déjame un mensaje
           </span>
           <p className='text-center'>
-            Envíame un correo electrónico a través de este formulario.
+            Puedes contactar conmigo a través del correo electrónico, simplemente rellenando este formulario.
           </p>
         </div>
         <div className={`${style.form} flex flex-col items-center gap-1 md:w-[500px] w-[350px] p-5 bg-gradient-to-r from-primaryColor2 to-primaryColor1 rounded-lg`}>
           <div className='w-full flex flex-col'>
             <InputComponent placeholder='Nombre' setHook={setNameToEmail} correct={nameToEmailCorrect} />
-            <span className={`${nameToEmailCorrect ? 'text-transparent' : 'text-black'} font-semibold px-2 text-sm`}>El campo necesita un mínimo de 3 caracteres.</span>
-          </div>
-          <div className='w-full flex flex-col'>
-            <InputComponent placeholder='Email' setHook={setEmailToEmail} correct={emailToEmailCorrect} />
-            <span className={`${emailToEmailCorrect ? 'text-transparent' : 'text-black'} font-semibold px-2 text-sm`}>El email no tiene un formato correcto.</span>
+            <span className={`${nameToEmailCorrect !== false ? 'text-transparent' : 'text-black'} font-semibold px-2 text-sm`}>El campo necesita un mínimo de 3 caracteres.</span>
           </div>
           <div className='w-full flex flex-col'>
             <TextareaComponent placeholder='Mensaje' setHook={setBodyToEmail} correct={bodyToEmailCorrect} />
-            <span className={`${bodyToEmailCorrect ? 'text-transparent' : 'text-black'} font-semibold px-2 text-sm`}>El campo necesita un mínimo de 3 caracteres.</span>
+            <span className={`${bodyToEmailCorrect !== false ? 'text-transparent' : 'text-black'} font-semibold px-2 text-sm`}>El campo necesita un mínimo de 3 caracteres.</span>
           </div>
           <button
-            onClick={() => checkForm()}
+            onClick={() => {checkForm()}}
             className='px-3 py-1 text-titleFontColor font-medium bg-backgroundColor rounded-lg cursor-pointer hover:brightness-125 ease-in-out duration-300 flex flex-row items-center gap-2'
           >
             Enviar

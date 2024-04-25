@@ -1,40 +1,40 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function UseIndexContact() {
 
   const [nameToEmail, setNameToEmail] = useState('');
-  const [emailToEmail, setEmailToEmail] = useState('');
   const [bodyToEmail, setBodyToEmail] = useState('');
   
-  const [nameToEmailCorrect, setNameToEmailCorrect] = useState(true);
-  const [emailToEmailCorrect, setEmailToEmailCorrect] = useState(true);
-  const [bodyToEmailCorrect, setBodyToEmailCorrect] = useState(true);
+  const [nameToEmailCorrect, setNameToEmailCorrect] = useState<boolean>();
+  const [bodyToEmailCorrect, setBodyToEmailCorrect] = useState<boolean>();
 
-  const checkForm = () => {
+  useEffect(() => {
+    if (nameToEmailCorrect && bodyToEmailCorrect) {
+      sendMail();
+    }
+  }, [nameToEmailCorrect, bodyToEmailCorrect]);
+
+  const checkForm = async () => {
     
     const normalTextRgx = /^.{3,}$/;
-    const textareaRgx = /^[\s\S]{3,}$/
-    ;
-    
-    const emailRgx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const textareaRgx = /^[\s\S]{3,}$/;
 
     setNameToEmailCorrect(normalTextRgx.test(nameToEmail));
-    setEmailToEmailCorrect(emailRgx.test(emailToEmail));
     setBodyToEmailCorrect(textareaRgx.test(bodyToEmail));
 
   }
   
-  // function sendMail() {
-  //   const mailtoLink = `mailto:armandoramossanchez@gmail.com?subject=${encodeURIComponent(nameToEmail)}&body=${encodeURIComponent(bodyToEmail)}`;
-  //   window.location.href = mailtoLink;
-  // }
+  const sendMail = () => {
+    const mailtoLink = `mailto:armandoramossanchez@gmail.com?subject=Mensaje desde la web de ${encodeURIComponent(nameToEmail)}&body=${encodeURIComponent(bodyToEmail)}`;
+    window.open(mailtoLink, '_blank');
+    setNameToEmailCorrect(undefined);
+    setBodyToEmailCorrect(undefined);
+  }
 
   return {
     setNameToEmail,
-    setEmailToEmail,
     setBodyToEmail,
     nameToEmailCorrect,
-    emailToEmailCorrect,
     bodyToEmailCorrect,
     checkForm
   }
