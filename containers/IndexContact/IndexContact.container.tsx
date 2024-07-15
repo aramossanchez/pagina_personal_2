@@ -34,7 +34,7 @@ export function IndexContactContainer() {
             Puedes contactar conmigo a través del correo electrónico, simplemente rellenando este formulario.
           </p>
         </div>
-        <div className={`${style.form} flex flex-col items-center gap-1 md:w-[500px] w-[350px] p-5 bg-gradient-to-r from-primaryColor2 to-primaryColor1 rounded-lg`}>
+        <div className={`${style.form} flex flex-col items-center gap-1 sm:w-[500px] w-[95%] p-5 bg-gradient-to-r from-primaryColor2 to-primaryColor1 rounded-lg`}>
           <div className='w-full flex flex-col'>
             <InputComponent placeholder='Nombre' setHook={setNameToEmail} correct={nameToEmailCorrect} />
             <span className={`${nameToEmailCorrect !== false ? 'text-transparent' : 'text-black'} font-semibold px-2 text-sm`}>El campo necesita un mínimo de 3 caracteres.</span>
@@ -50,7 +50,7 @@ export function IndexContactContainer() {
             Enviar
           </button>
         </div>
-        <span>También puedes dejarme un mensaje por cualquiera de mis redes sociales, si lo prefieres.</span>
+        <span className='text-center'>También puedes dejarme un mensaje por cualquiera de mis redes sociales, si lo prefieres.</span>
         <div className='flex flex-row justify-center'>
           <SocialMediaLinksIconsComponent />
         </div>
