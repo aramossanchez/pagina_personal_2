@@ -87,11 +87,11 @@ export function MenuTopContainer() {
                 EXPERIENCIA
               </span>
             </a>
-            <a href={`${basePath}#Portfolio`} onClick={() => setMenuOpen(false)}>
+            {/* <a href={`${basePath}#Portfolio`} onClick={() => setMenuOpen(false)}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 PORTFOLIO
               </span>
-            </a>
+            </a> */}
             <a href={`${basePath}#About`} onClick={() => setMenuOpen(false)}>
               <span className='cursor-pointer hover:text-primaryColor2 ease-in-out min-[1023px]:duration-300 duration-0'>
                 SOBRE MÍ

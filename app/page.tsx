@@ -4,7 +4,7 @@ import { FooterContainer } from '@/containers/Footer/Footer'
 import { IndexAboutContainer } from '@/containers/IndexAbout/IndexAbout.container'
 import { IndexContactContainer } from '@/containers/IndexContact/IndexContact.container'
 import { IndexExperienceContainer } from '@/containers/IndexExperience/IndexExperience.container'
-import { IndexPortfolioContainer } from '@/containers/IndexPortfolio/IndexPortfolio.container'
+// import { IndexPortfolioContainer } from '@/containers/IndexPortfolio/IndexPortfolio.container'
 import { IndexPresentationContainer } from '@/containers/IndexPresentation/IndexPresentation.container'
 import { IndexSkillsContainer } from '@/containers/IndexSkills/IndexSkills.container'
 import { MenuTopContainer } from '@/containers/MenuTop/MenuTop.container'
@@ -18,7 +18,7 @@ export default function Index() {
         <MenuTopContainer />
         <IndexPresentationContainer />
         <IndexExperienceContainer />
-        <IndexPortfolioContainer />
+        {/* <IndexPortfolioContainer /> */}
         <IndexAboutContainer />
         <IndexSkillsContainer />
         <IndexContactContainer />

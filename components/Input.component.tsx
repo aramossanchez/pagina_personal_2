@@ -1,11 +1,10 @@
-
-
-export function InputComponent({ placeholder = '', setHook = (e: string) => {}, correct = true}) {
+export function InputComponent({ placeholder = '', setHook = (e: string) => { }, correct = true }) {
 
   return (
     <div className='flex flex-col gap-2 w-full'>
       {/* <span className=' text-titleFontColor p-0 m-0'>{placeholder}</span> */}
       <input
+        autoComplete='off'
         onChange={(e) => setHook(e.target.value)}
         placeholder={placeholder} id={placeholder}
         type="text"

@@ -2,8 +2,8 @@ import { InputComponent } from '@/components/Input.component';
 import { TextareaComponent } from '@/components/TextArea/Textarea.component';
 import { TitleComponent } from '@/components/Title.component';
 import style from './IndexContact.module.css';
-
 import { UseIndexContact } from './IndexContact.hook';
+import { SocialMediaLinksIconsComponent } from '@/components/SocialMediaIconsLinks.component';
 
 export function IndexContactContainer() {
 
@@ -44,11 +44,15 @@ export function IndexContactContainer() {
             <span className={`${bodyToEmailCorrect !== false ? 'text-transparent' : 'text-black'} font-semibold px-2 text-sm`}>El campo necesita un mínimo de 3 caracteres.</span>
           </div>
           <button
-            onClick={() => {checkForm()}}
+            onClick={() => { checkForm() }}
             className='px-3 py-1 text-titleFontColor font-medium bg-backgroundColor rounded-lg cursor-pointer hover:brightness-125 ease-in-out duration-300 flex flex-row items-center gap-2'
           >
             Enviar
           </button>
+        </div>
+        <span>También puedes dejarme un mensaje por cualquiera de mis redes sociales, si lo prefieres.</span>
+        <div className='flex flex-row justify-center'>
+          <SocialMediaLinksIconsComponent />
         </div>
       </div>
     </section>
