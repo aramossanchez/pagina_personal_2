@@ -2,11 +2,7 @@ import { ButtonComponent } from '@/components/Button.component';
 import style from './IndexAbout.module.css';
 import Image from 'next/image';
 import { basePath } from '../../config/config';
-import { SecondaryButton } from '@/components/SecondaryButton.component';
 import { TitleComponent } from '@/components/Title.component';
-import Link from 'next/link';
-import { IconBrandInstagram, IconBrandLinkedin, IconBrandX } from '@tabler/icons-react';
-import { TooltipComponent } from '@/components/Tooltip/Tooltip.component';
 import { SocialMediaLinksIconsComponent } from '@/components/SocialMediaIconsLinks.component';
 
 export function IndexAboutContainer() {

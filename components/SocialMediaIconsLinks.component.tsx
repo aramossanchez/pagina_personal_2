@@ -22,13 +22,13 @@ export function SocialMediaLinksIconsComponent () {
           </div>
         </Link>
       </TooltipComponent>
-      <TooltipComponent label={'Instagram'}>
+      {/* <TooltipComponent label={'Instagram'}>
         <Link href={'https://www.instagram.com/armandohyeah/'} target='_blank'>
           <div className='text-titleFontColor hover:text-primaryColor2 ease-in-out duration-300'>
             <IconBrandInstagram size={29} />
           </div>
         </Link>
-      </TooltipComponent>
+      </TooltipComponent> */}
     </div>
   )
 }

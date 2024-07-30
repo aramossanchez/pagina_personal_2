@@ -20,7 +20,7 @@ export function IndexPresentationContainer() {
           text-titleFontColor
           min-[1023px]:text-9xl min-[673px]:text-8xl min-[366px]:text-6xl text-5xl
         '>
-          FULL STACK
+          FRONTEND
         </span>
         <span className='
           text-titleFontColor
@@ -35,7 +35,7 @@ export function IndexPresentationContainer() {
           </span>
         </span>
         <div className='text-xl mt-5'>
-          <Link href={'https://drive.google.com/file/d/1HjOEI5h0eapkYHm0vgba8I2JVEZ-5Hdl/view?usp=drive_link'} target='_blank'>
+          <Link href={'https://drive.google.com/file/d/1c5zcsMuNSnL7PB_FLrJ9U1-rUN6gaft-/view?usp=sharing'} target='_blank'>
             <ButtonComponent text='Descarga mi CV' icon={<IconDownload />} />
           </Link>
         </div>
