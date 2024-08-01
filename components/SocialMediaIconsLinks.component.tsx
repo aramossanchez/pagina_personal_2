@@ -1,7 +1,7 @@
 import React from 'react';
 import { TooltipComponent } from './Tooltip/Tooltip.component';
 import Link from 'next/link';
-import { IconBrandInstagram, IconBrandLinkedin, IconBrandX } from '@tabler/icons-react';
+import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandX } from '@tabler/icons-react';
 
 
 export function SocialMediaLinksIconsComponent () {
@@ -19,6 +19,13 @@ export function SocialMediaLinksIconsComponent () {
         <Link href={'https://twitter.com/aramos_dev'} target='_blank'>
           <div className='text-titleFontColor hover:text-primaryColor2 ease-in-out duration-300'>
             <IconBrandX size={29} />
+          </div>
+        </Link>
+      </TooltipComponent>
+      <TooltipComponent label={'Github'}>
+        <Link href={'https://github.com/aramossanchez'} target='_blank'>
+          <div className='text-titleFontColor hover:text-primaryColor2 ease-in-out duration-300'>
+            <IconBrandGithub size={29} />
           </div>
         </Link>
       </TooltipComponent>
