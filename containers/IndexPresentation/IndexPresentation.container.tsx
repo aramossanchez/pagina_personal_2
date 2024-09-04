@@ -35,7 +35,7 @@ export function IndexPresentationContainer() {
           </span>
         </span>
         <div className='text-xl mt-5'>
-          <Link href={'https://drive.google.com/file/d/1c5zcsMuNSnL7PB_FLrJ9U1-rUN6gaft-/view?usp=sharing'} target='_blank'>
+          <Link href={'https://drive.google.com/file/d/1Ei5twJNkyv_MREWoHlDcr2kI55OnjL34/view'} target='_blank'>
             <ButtonComponent text='Descarga mi CV' icon={<IconDownload />} />
           </Link>
         </div>
