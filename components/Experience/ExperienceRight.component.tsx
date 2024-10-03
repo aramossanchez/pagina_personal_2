@@ -56,7 +56,7 @@ export function ExperienceRightComponent({ experience }: { experience: Experienc
           {experience.projects.map((project) => {
             return (
               <div className='flex flex-col relative pl-3'>
-                <div className='flex flex-col'>
+                <div className='flex flex-col gap-y-1'>
                   {project.url ?
                     <Link href={project.url} target='_blank'>
                       <span className='text-titleFontColor underline'>{project.name}</span>

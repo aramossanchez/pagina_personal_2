@@ -37,11 +37,11 @@ export function IndexAboutContainer() {
                 src={`${basePath}images/profile.jpg`}
                 alt='Profile Image'
                 width={300}
-                height={310}
+                height={300}
                 className='
                   z-30 relative rounded-lg
                   min-[428px]:w-[300px] w-[270px]
-                  min-[428px]:h-[310px] h-[280px]
+                  min-[428px]:h-[300px] h-[270px]
                 '
               />
               <div className='

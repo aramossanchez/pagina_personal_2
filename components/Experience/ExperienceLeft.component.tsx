@@ -79,7 +79,7 @@ export function ExperienceLeftComponent({ experience }: { experience: Experience
                 min-[1023px]:pl-0 pl-3
                 min-[1023px]:items-end items-start
               '>
-                <div className='flex flex-col'>
+                <div className='flex flex-col gap-y-1'>
                   {project.url ?
                     <Link href={project.url} target='_blank'>
                       <span className='text-titleFontColor underline'>{project.name}</span>
