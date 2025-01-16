@@ -2,9 +2,76 @@ const experiences = [
   {
     orientation: 'right',
     role: 'Frontend Developer',
+    company: 'Grupo Xtra',
+    init_date: '2024',
+    finish_date: 'Actualidad',
+    projects: [
+      {
+        name: 'Grupo Xtra - Portal de empleo',
+        url: 'https://grupoxtra.es' ,
+        explanation: 'Sitio web corporativo de Grupo Xtra. Esta web se utiliza para mostrar la imagen, la marca y las distintas líneas de negocio de la compañía. Existe también una vista en la que se publican vacantes de empleo. Para la creación de estas vacantes se usa un CMS hecho con Payload, para que el departamento de recursos humanos pueda nutrir de datos la web. (encargado de reestructuración completa del proyecto inicial, creación de web, creación de CMS, desarrollo de funcionalidades, despliegue en producción).',
+        technologies: [
+          {
+            name: 'Next.js',
+            icon: 'nextjs_icon'
+          },
+          {
+            name: 'React',
+            icon: 'react_icon'
+          },
+          {
+            name: 'Typescript',
+            icon: 'typescript_icon'
+          },
+          {
+            name: 'Tailwind',
+            icon: 'tailwind_icon'
+          },
+          {
+            name: 'Express',
+            icon: 'express_icon'
+          },
+          {
+            name: 'Payload',
+            icon: 'payload_icon'
+          },
+        ]
+      },
+      {
+        name: 'ClickAutos',
+        url: 'https://clickautos.es/',
+        explanation: 'Sitio web orientado a la compra de vehículos. Permite ver los vehículos disponibles con todas sus características (año, precio, modelo, marca, etc). También existe una opción para contactar e informar del interés de un vehículo en concreto (desarrollo de funcionalidades).',
+        technologies: [
+          {
+            name: 'Next.js',
+            icon: 'nextjs_icon'
+          },
+          {
+            name: 'React',
+            icon: 'react_icon'
+          },
+          {
+            name: 'TypeScript',
+            icon: 'typescript_icon'
+          },
+          {
+            name: 'Tailwind',
+            icon: 'tailwind_icon'
+          },
+          {
+            name: 'CSS',
+            icon: 'css_icon'
+          }
+        ]
+      },
+    ]
+  },
+  {
+    orientation: 'left',
+    role: 'Frontend Developer',
     company: 'Geekshubs',
     init_date: '2022',
-    finish_date: 'Actualidad',
+    finish_date: '2024',
     projects: [
       {
         name: 'Geekup',
@@ -78,7 +145,7 @@ const experiences = [
     ]
   },
   {
-    orientation: 'left',
+    orientation: 'right',
     role: 'Fullstack Developer',
     company: 'Cyberdelia',
     init_date: '2022',

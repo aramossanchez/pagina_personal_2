@@ -28,8 +28,20 @@ const hardSkills = [
     Text: 'CSS'
   },
   {
+    Image: 'images/github_icon.svg',
+    Text: 'Github'
+  },
+  {
+    Image: 'images/bitbucket_icon.svg',
+    Text: 'Bitbucket'
+  },
+  {
     Image: 'images/docker_icon.svg',
     Text: 'Docker'
+  },
+  {
+    Image: 'images/payload_icon.svg',
+    Text: 'Payload'
   },
   {
     Image: 'images/express_icon.svg',
