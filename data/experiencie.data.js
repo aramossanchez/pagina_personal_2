@@ -28,6 +28,10 @@ const experiences = [
             icon: 'tailwind_icon'
           },
           {
+            name: 'Docker',
+            icon: 'docker_icon'
+          },
+          {
             name: 'Express',
             icon: 'express_icon'
           },
