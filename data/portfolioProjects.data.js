@@ -1,11 +1,11 @@
 const portfolioProjects = [
-  // {
-  //   ProjectName: 'Sudoku solver',
-  //   Explanation: "Algoritmo diseñado para resolver un sudoku. Desarrollado en Next.js. Tienes acceso a una típica cuadrícula de sudoku, donde puedes rellenar cualquier cuadrado con los números que elijas. Al presionar el botón validar, la aplicación resolverá el sudoku (siempre que los números ingresados ​​no hagan que el sudoku sea incorrecto e imposible de resolver).",
-  //   Image: 'images/profile.jpg',
-  //   Url: 'https://github.com/aramossanchez/sudoku_solver',
-  //   Orientation: 'left'
-  // },
+  {
+    ProjectName: 'Sudoku solver',
+    Explanation: "Algoritmo diseñado para resolver un sudoku. Desarrollado en Next.js. Tienes acceso a una típica cuadrícula de sudoku, donde puedes rellenar cualquier cuadrado con los números que elijas. Al presionar el botón validar, la aplicación resolverá el sudoku (siempre que los números ingresados ​​no hagan que el sudoku sea incorrecto e imposible de resolver).",
+    Image: 'images/profile.jpg',
+    Url: 'https://github.com/aramossanchez/sudoku_solver',
+    Orientation: 'left'
+  },
   {
     ProjectName: 'Portfolio para profesional de la neuropsicología',
     Explanation: 'Página web diseñada para trabajadora del sector de la neuropsicología. Desarrollado con Next.js. Cada sección de la web es un componente individual dentro de la app, lo que facilita enormemente su edición, cambio y escalabilidad.',

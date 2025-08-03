@@ -1,8 +1,8 @@
-import { IconBriefcase2 } from "@tabler/icons-react"
-import Link from "next/link"
-import { TooltipComponent } from "../Tooltip/Tooltip.component"
-import Image from "next/image"
-import { basePath } from '../../config/config';
+import { IconBriefcase2 } from "@tabler/icons-react";
+import Link from "next/link";
+import { TooltipComponent } from "../Tooltip/Tooltip.component";
+import Image from "next/image";
+import { basePath } from "../../config/config";
 
 interface Technology {
   name: string;
@@ -10,26 +10,30 @@ interface Technology {
 }
 
 interface Projects {
-  name: string,
-  url: string | null,
-  explanation: string,
-  technologies: Technology[]
+  name: string;
+  url: string | null;
+  explanation: string;
+  technologies: Technology[];
 }
 
 interface Experience {
-  orientation: string,
-  role: string,
-  company: string,
-  init_date: string,
-  finish_date: string,
-  projects: Projects[]
+  orientation: string;
+  role: string;
+  company: string;
+  init_date: string;
+  finish_date: string;
+  projects: Projects[];
 }
 
-export function ExperienceLeftComponent({ experience }: { experience: Experience }) {
-
+export function ExperienceLeftComponent({
+  experience,
+}: {
+  experience: Experience;
+}) {
   return (
-    <div className='w-full flex flex-row items-center justify-start'>
-      <div className='
+    <div className="w-full flex flex-row items-center justify-start">
+      <div
+        className="
         pt-1 border-primaryColor2 relative
         min-[1023px]:border-r-4 border-r-0
         min-[1023px]:border-l-0 border-l-4
@@ -37,64 +41,82 @@ export function ExperienceLeftComponent({ experience }: { experience: Experience
         min-[1023px]:pr-6 pr-0
         min-[1023px]:pl-0 pl-6
         min-[1023px]:order-1 order-2
-      '>
-        <div className='
+      "
+      >
+        <div
+          className="
           absolute top-0 border-2 border-titleFontColor rounded-full p-1 bg-backgroundColor
           min-[1023px]:right-[-1.25em]
           max-[1023px]:left-[-1.25em]
-        '>
-          <IconBriefcase2 className=' text-titleFontColor' />
+        "
+        >
+          <IconBriefcase2 className=" text-titleFontColor" />
         </div>
-        <div className='
+        <div
+          className="
           w-full flex flex-row items-center
           min-[1023px]:justify-end justify-start
-        '>
-          <span className='text-primaryColor2 font-medium text-lg'>{experience.role}</span>
-        </div>
-        <div className='
-          py-2 flex flex-row items-end gap-3 text-[17px] w-full
-          min-[1023px]:justify-end justify-start
-        '>
-          <span className='text-titleFontColor'>{experience.company}</span>
-          <span>
-            {experience.init_date === experience.finish_date ?
-              experience.init_date
-              :
-              experience.init_date + ' - ' + experience.finish_date
-            }
+        "
+        >
+          <span className="text-primaryColor2 font-medium text-lg">
+            {experience.role}
           </span>
         </div>
-        <div className='
+        <div
+          className="
+          py-2 flex flex-row items-end gap-3 text-[17px] w-full
+          min-[1023px]:justify-end justify-start
+        "
+        >
+          <span className="text-titleFontColor">{experience.company}</span>
+          <span>
+            {experience.init_date === experience.finish_date
+              ? experience.init_date
+              : experience.init_date + " - " + experience.finish_date}
+          </span>
+        </div>
+        <div
+          className="
           flex flex-col gap-2
           min-[1023px]:items-end items-start
           min-[1023px]:text-right text-left
-        '>
+        "
+        >
           <span>Proyectos en los que he participado:</span>
           {/* LISTADO DE PROYECTOS */}
           {experience.projects.map((project) => {
             return (
-              <div className='
+              <div
+                className="
                 flex flex-col relative 
                 min-[1023px]:pr-3 pr-0
                 min-[1023px]:pl-0 pl-3
                 min-[1023px]:items-end items-start
-              '>
-                <div className='flex flex-col gap-y-1'>
-                  {project.url ?
-                    <Link href={project.url} target='_blank'>
-                      <span className='text-titleFontColor underline'>{project.name}</span>
+              "
+              >
+                <div className="flex flex-col gap-y-1">
+                  {project.url ? (
+                    <Link href={project.url} target="_blank">
+                      <span className="text-titleFontColor underline">
+                        {project.name}
+                      </span>
                     </Link>
-                    :
-                    <span className='text-titleFontColor'>{project.name}</span>
-                  }
+                  ) : (
+                    <span className="text-titleFontColor">{project.name}</span>
+                  )}
                   <span>{project.explanation}</span>
                 </div>
-                <span className='
+                {/* TODO -> BUSCAR DISEÑO PARA TAREAS REALIZADAS, Y SEPARARLO DE LA EXPLICACIÓN DEL PROYECTO */}
+                <span
+                  className="
                   flex mt-2 mb-2 flex-col
                   min-[768px]:items-end items-start
-                '>
-                  <span className='text-titleFontColor'>Tecnologías usadas</span>
-                  <div className='flex flex-row items-center my-2 gap-2'>
+                "
+                >
+                  <span className="text-titleFontColor">
+                    Tecnologías usadas
+                  </span>
+                  <div className="flex flex-row items-center my-2 gap-2">
                     {project.technologies.map((technology) => {
                       return (
                         <TooltipComponent label={technology.name}>
@@ -103,23 +125,25 @@ export function ExperienceLeftComponent({ experience }: { experience: Experience
                             width={30}
                             height={30}
                             alt="Logo"
-                            className='w-[30px] h-[30px]'
+                            className="w-[30px] h-[30px]"
                           />
                         </TooltipComponent>
-                      )
+                      );
                     })}
                   </div>
                 </span>
-                <span className='
+                <span
+                  className="
                   bg-primaryColor2 w-[10px] h-[10px] rounded-full border-[1px] border-primaryColor1 absolute top-[0.5em]
                   max-[1023px]:left-[-0.2em]
                   min-[1023px]:right-[-0.2em] right-0
-                '></span>
+                "
+                ></span>
               </div>
-            )
+            );
           })}
         </div>
       </div>
     </div>
-  )
+  );
 }
